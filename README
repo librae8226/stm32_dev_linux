@@ -1,0 +1,9 @@
+STM32 base projects home. by librae - leafgrass.tk
+
+These projects is originally based on libmaple.
+Thanks to their excellent works! - leaflabs.com
+
+Run command below in terminal:
+	$ make (or make jtag)
+	$ ./scripts/download.sh ./build/maple.bin
+
