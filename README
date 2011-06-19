@@ -1,8 +1,8 @@
-STM32 base projects home. by librae - leafgrass.tk
+STM32 base projects home. by librae - http://leafgrass.tk
 Now it works fine though it's ugly :P
 
 These projects is originally based on libmaple.
-Thanks to their excellent works! - leaflabs.com
+Thanks to their excellent works! - http://leaflabs.com
 
 Run command below in terminal:
 	$ make (or make jtag)
