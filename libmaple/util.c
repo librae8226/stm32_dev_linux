@@ -38,11 +38,11 @@
 
 /* Failed ASSERT()s send out a message using this USART config. */
 #ifndef ERROR_USART
-#define ERROR_USART            USART2
+#define ERROR_USART            USART1
 #define ERROR_USART_CLK_SPEED  72000000UL
 #define ERROR_USART_BAUD       9600
 #define ERROR_TX_PORT          GPIOA
-#define ERROR_TX_PIN           2
+#define ERROR_TX_PIN           9
 #endif
 
 /* If you define ERROR_LED_PORT and ERROR_LED_PIN, then a failed
@@ -141,7 +141,8 @@ void throb(void) {
     }
 #else
     /* No error LED is defined; do nothing. */
-    while (1)
-        ;
+    while (1) {
+		;
+	}
 #endif
 }

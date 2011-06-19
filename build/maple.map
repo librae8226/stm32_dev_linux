@@ -1,0 +1,2041 @@
+Archive member included because of file (symbol)
+
+./support/ld/libcs3_stm32_med_density.a(stm32_vector_table.o)
+                              (__cs3_stm32_vector_table)
+./support/ld/libcs3_stm32_med_density.a(stm32_isrs.o)
+                              (__stm32reservedexception7)
+./support/ld/libcs3_stm32_med_density.a(start.o)
+                              (_start)
+./support/ld/libcs3_stm32_med_density.a(start_c.o)
+                              (__cs3_start_c)
+/home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+                              ./support/ld/libcs3_stm32_med_density.a(start_c.o) (__libc_init_array)
+
+Allocating common symbols
+Common symbol       size              file
+
+SaveRState          0x2               build/./libmaple/usb/usb_lib/usb_int.o
+SaveState           0x2               build/./libmaple/usb/usb_lib/usb_init.o
+vcomBufferRx        0xc0              build/./libmaple/usb/usb_callbacks.o
+pProperty           0x4               build/./libmaple/usb/usb_lib/usb_init.o
+EPindex             0x1               build/./libmaple/usb/usb_lib/usb_init.o
+SaveTState          0x2               build/./libmaple/usb/usb_lib/usb_int.o
+systick_uptime_millis
+                    0x4               build/./libmaple/systick.o
+Device_Info         0x1c              build/./libmaple/usb/usb_lib/usb_init.o
+pUser_Standard_Requests
+                    0x4               build/./libmaple/usb/usb_lib/usb_init.o
+StatusInfo          0x2               build/./libmaple/usb/usb_lib/usb_core.o
+pInformation        0x4               build/./libmaple/usb/usb_lib/usb_init.o
+ResumeS             0x2               build/./libmaple/usb/usb.o
+wInterrupt_Mask     0x2               build/./libmaple/usb/usb_lib/usb_init.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crti.o
+ .data          0x00000000        0x0 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crti.o
+ .bss           0x00000000        0x0 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crti.o
+ .data          0x00000000        0x4 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtbegin.o
+ .text          0x00000000        0x0 build/./libmaple/adc.o
+ .data          0x00000000        0x0 build/./libmaple/adc.o
+ .bss           0x00000000        0x0 build/./libmaple/adc.o
+ .text.adc_read
+                0x00000000       0x22 build/./libmaple/adc.o
+ .text          0x00000000        0x0 build/./libmaple/bkp.o
+ .data          0x00000000        0x0 build/./libmaple/bkp.o
+ .bss           0x00000000        0x0 build/./libmaple/bkp.o
+ .text.data_register
+                0x00000000       0x18 build/./libmaple/bkp.o
+ .text.bb_perip.clone.1
+                0x00000000        0x8 build/./libmaple/bkp.o
+ .text.bkp_init
+                0x00000000       0x18 build/./libmaple/bkp.o
+ .text.bkp_enable_writes
+                0x00000000        0xc build/./libmaple/bkp.o
+ .text.bkp_disable_writes
+                0x00000000        0xc build/./libmaple/bkp.o
+ .text.bkp_read
+                0x00000000       0x28 build/./libmaple/bkp.o
+ .text.bkp_write
+                0x00000000       0x24 build/./libmaple/bkp.o
+ .data.bkp      0x00000000        0x4 build/./libmaple/bkp.o
+ .data.BKP      0x00000000        0x4 build/./libmaple/bkp.o
+ .rodata.str1.1
+                0x00000000       0x11 build/./libmaple/bkp.o
+ .text          0x00000000        0x0 build/./libmaple/dac.o
+ .data          0x00000000        0x0 build/./libmaple/dac.o
+ .bss           0x00000000        0x0 build/./libmaple/dac.o
+ .text          0x00000000        0x0 build/./libmaple/dma.o
+ .data          0x00000000        0x0 build/./libmaple/dma.o
+ .bss           0x00000000        0x0 build/./libmaple/dma.o
+ .text.dma_channel_regs
+                0x00000000        0xe build/./libmaple/dma.o
+ .text.dma_is_channel_enabled
+                0x00000000        0xe build/./libmaple/dma.o
+ .text.bb_peri_set_bit.clone.2
+                0x00000000        0xa build/./libmaple/dma.o
+ .text.dma_init
+                0x00000000        0x6 build/./libmaple/dma.o
+ .text.dma_set_num_transfers
+                0x00000000       0x2c build/./libmaple/dma.o
+ .text.dma_set_priority
+                0x00000000       0x34 build/./libmaple/dma.o
+ .text.dma_attach_interrupt
+                0x00000000       0x28 build/./libmaple/dma.o
+ .text.dma_detach_interrupt
+                0x00000000       0x1a build/./libmaple/dma.o
+ .text.dma_get_irq_cause
+                0x00000000       0x5c build/./libmaple/dma.o
+ .text.dma_enable
+                0x00000000       0x10 build/./libmaple/dma.o
+ .text.dma_disable
+                0x00000000       0x10 build/./libmaple/dma.o
+ .text.dma_setup_transfer
+                0x00000000       0x38 build/./libmaple/dma.o
+ .text.dma_set_mem_addr
+                0x00000000       0x30 build/./libmaple/dma.o
+ .text.dma_set_per_addr
+                0x00000000       0x30 build/./libmaple/dma.o
+ .rodata.str1.1
+                0x00000000       0x4a build/./libmaple/dma.o
+ .text          0x00000000        0x0 build/./libmaple/exti.o
+ .data          0x00000000        0x0 build/./libmaple/exti.o
+ .bss           0x00000000        0x0 build/./libmaple/exti.o
+ .text.nvic_irq_disable
+                0x00000000       0x20 build/./libmaple/exti.o
+ .text.bb_sramp
+                0x00000000        0xc build/./libmaple/exti.o
+ .text.exti_attach_interrupt
+                0x00000000       0xbc build/./libmaple/exti.o
+ .text.exti_detach_interrupt
+                0x00000000       0x70 build/./libmaple/exti.o
+ .bss.exti_9_5_en
+                0x00000000        0x2 build/./libmaple/exti.o
+ .bss.exti_15_10_en
+                0x00000000        0x2 build/./libmaple/exti.o
+ .text          0x00000000        0x0 build/./libmaple/flash.o
+ .data          0x00000000        0x0 build/./libmaple/flash.o
+ .bss           0x00000000        0x0 build/./libmaple/flash.o
+ .text          0x00000000        0x0 build/./libmaple/fsmc.o
+ .data          0x00000000        0x0 build/./libmaple/fsmc.o
+ .bss           0x00000000        0x0 build/./libmaple/fsmc.o
+ .text          0x00000000        0x0 build/./libmaple/gpio.o
+ .data          0x00000000        0x0 build/./libmaple/gpio.o
+ .bss           0x00000000        0x0 build/./libmaple/gpio.o
+ .text.afio_exti_select
+                0x00000000       0x28 build/./libmaple/gpio.o
+ .text.afio_remap
+                0x00000000       0x20 build/./libmaple/gpio.o
+ .rodata.GPIOB  0x00000000        0x4 build/./libmaple/gpio.o
+ .rodata.GPIOC  0x00000000        0x4 build/./libmaple/gpio.o
+ .rodata.GPIOD  0x00000000        0x4 build/./libmaple/gpio.o
+ .text          0x00000000        0x0 build/./libmaple/iwdg.o
+ .data          0x00000000        0x0 build/./libmaple/iwdg.o
+ .bss           0x00000000        0x0 build/./libmaple/iwdg.o
+ .text.iwdg_feed
+                0x00000000       0x10 build/./libmaple/iwdg.o
+ .text.iwdg_init
+                0x00000000       0x1c build/./libmaple/iwdg.o
+ .text          0x00000000        0x0 build/./libmaple/nvic.o
+ .data          0x00000000        0x0 build/./libmaple/nvic.o
+ .bss           0x00000000        0x0 build/./libmaple/nvic.o
+ .text          0x00000000        0x0 build/./libmaple/pwr.o
+ .data          0x00000000        0x0 build/./libmaple/pwr.o
+ .bss           0x00000000        0x0 build/./libmaple/pwr.o
+ .text.pwr_init
+                0x00000000       0x12 build/./libmaple/pwr.o
+ .text          0x00000000        0x0 build/./libmaple/i2c.o
+ .data          0x00000000        0x0 build/./libmaple/i2c.o
+ .bss           0x00000000        0x0 build/./libmaple/i2c.o
+ .text.nvic_irq_enable
+                0x00000000       0x1c build/./libmaple/i2c.o
+ .text.gpio_write_bit.clone.0
+                0x00000000       0x14 build/./libmaple/i2c.o
+ .text.gpio_read_bit.clone.1
+                0x00000000        0xa build/./libmaple/i2c.o
+ .text.delay_us.clone.3
+                0x00000000        0xa build/./libmaple/i2c.o
+ .text.i2c_bus_reset
+                0x00000000       0xb2 build/./libmaple/i2c.o
+ .text.i2c_init
+                0x00000000       0x14 build/./libmaple/i2c.o
+ .text.i2c_master_enable
+                0x00000000       0xec build/./libmaple/i2c.o
+ .text.i2c_master_xfer
+                0x00000000       0x70 build/./libmaple/i2c.o
+ .rodata.str1.1
+                0x00000000       0x4b build/./libmaple/i2c.o
+ .rodata.I2C1   0x00000000        0x4 build/./libmaple/i2c.o
+ .rodata.I2C2   0x00000000        0x4 build/./libmaple/i2c.o
+ .text          0x00000000        0x0 build/./libmaple/rcc.o
+ .data          0x00000000        0x0 build/./libmaple/rcc.o
+ .bss           0x00000000        0x0 build/./libmaple/rcc.o
+ .text          0x00000000        0x0 build/./libmaple/spi.o
+ .data          0x00000000        0x0 build/./libmaple/spi.o
+ .bss           0x00000000        0x0 build/./libmaple/spi.o
+ .text.bb_peri_set_bit
+                0x00000000        0xe build/./libmaple/spi.o
+ .text.spi_init
+                0x00000000       0x14 build/./libmaple/spi.o
+ .text.spi_gpio_cfg
+                0x00000000       0x66 build/./libmaple/spi.o
+ .text.spi_tx   0x00000000       0x2c build/./libmaple/spi.o
+ .text.spi_foreach
+                0x00000000       0x1c build/./libmaple/spi.o
+ .text.spi_peripheral_enable
+                0x00000000        0xa build/./libmaple/spi.o
+ .text.spi_peripheral_disable
+                0x00000000        0xa build/./libmaple/spi.o
+ .text.spi_reconfigure
+                0x00000000       0x22 build/./libmaple/spi.o
+ .text.spi_slave_enable
+                0x00000000        0x8 build/./libmaple/spi.o
+ .text.spi_master_enable
+                0x00000000        0xc build/./libmaple/spi.o
+ .text.spi_tx_dma_enable
+                0x00000000        0xc build/./libmaple/spi.o
+ .text.spi_tx_dma_disable
+                0x00000000        0xc build/./libmaple/spi.o
+ .text.spi_rx_dma_enable
+                0x00000000        0xc build/./libmaple/spi.o
+ .text.spi_rx_dma_disable
+                0x00000000        0xc build/./libmaple/spi.o
+ .data.spi1     0x00000000        0x8 build/./libmaple/spi.o
+ .data.spi2     0x00000000        0x8 build/./libmaple/spi.o
+ .data.SPI1     0x00000000        0x4 build/./libmaple/spi.o
+ .data.SPI2     0x00000000        0x4 build/./libmaple/spi.o
+ .text          0x00000000        0x0 build/./libmaple/syscalls.o
+ .data          0x00000000        0x0 build/./libmaple/syscalls.o
+ .bss           0x00000000        0x0 build/./libmaple/syscalls.o
+ .text._sbrk    0x00000000       0x1c build/./libmaple/syscalls.o
+ .text._open    0x00000000        0x8 build/./libmaple/syscalls.o
+ .text._close   0x00000000        0x4 build/./libmaple/syscalls.o
+ .text._fstat   0x00000000        0xa build/./libmaple/syscalls.o
+ .text._isatty  0x00000000        0x4 build/./libmaple/syscalls.o
+ .text.isatty   0x00000000        0x4 build/./libmaple/syscalls.o
+ .text._lseek   0x00000000        0x6 build/./libmaple/syscalls.o
+ .text.getch    0x00000000        0x4 build/./libmaple/syscalls.o
+ .text._read    0x00000000        0x8 build/./libmaple/syscalls.o
+ .text.putch    0x00000000        0x2 build/./libmaple/syscalls.o
+ .text.cgets    0x00000000       0x22 build/./libmaple/syscalls.o
+ .text._write   0x00000000        0x4 build/./libmaple/syscalls.o
+ .text.fgets    0x00000000        0xc build/./libmaple/syscalls.o
+ .bss.heap_ptr.4275
+                0x00000000        0x4 build/./libmaple/syscalls.o
+ .text          0x00000000        0x0 build/./libmaple/systick.o
+ .data          0x00000000        0x0 build/./libmaple/systick.o
+ .bss           0x00000000        0x0 build/./libmaple/systick.o
+ .text.systick_disable
+                0x00000000        0xc build/./libmaple/systick.o
+ .text          0x00000000        0x0 build/./libmaple/timer.o
+ .data          0x00000000        0x0 build/./libmaple/timer.o
+ .bss           0x00000000        0x0 build/./libmaple/timer.o
+ .text.nvic_irq_enable
+                0x00000000       0x1c build/./libmaple/timer.o
+ .text.timer_oc_set_mode
+                0x00000000       0x34 build/./libmaple/timer.o
+ .text.timer_disable_irq
+                0x00000000       0x10 build/./libmaple/timer.o
+ .text.timer_cc_enable
+                0x00000000       0x14 build/./libmaple/timer.o
+ .text.timer_attach_interrupt
+                0x00000000       0x9c build/./libmaple/timer.o
+ .text.timer_detach_interrupt
+                0x00000000       0x14 build/./libmaple/timer.o
+ .text.timer_set_mode
+                0x00000000       0x90 build/./libmaple/timer.o
+ .text          0x00000000        0x0 build/./libmaple/usart.o
+ .data          0x00000000        0x0 build/./libmaple/usart.o
+ .bss           0x00000000        0x0 build/./libmaple/usart.o
+ .text          0x00000000        0x0 build/./libmaple/util.o
+ .data          0x00000000        0x0 build/./libmaple/util.o
+ .bss           0x00000000        0x0 build/./libmaple/util.o
+ .text          0x00000000        0x0 build/./libmaple/usb/descriptors.o
+ .data          0x00000000        0x0 build/./libmaple/usb/descriptors.o
+ .bss           0x00000000        0x0 build/./libmaple/usb/descriptors.o
+ .text          0x00000000        0x0 build/./libmaple/usb/usb.o
+ .data          0x00000000        0x0 build/./libmaple/usb/usb.o
+ .bss           0x00000000        0x0 build/./libmaple/usb/usb.o
+ .text.gpio_write_bit.clone.0.clone.1
+                0x00000000        0xe build/./libmaple/usb/usb.o
+ .text.setupUSB
+                0x00000000       0x34 build/./libmaple/usb/usb.o
+ .text.usbPowerOff
+                0x00000000       0x1c build/./libmaple/usb/usb.o
+ .text.usbDsbISR
+                0x00000000       0x1e build/./libmaple/usb/usb.o
+ .text.disableUSB
+                0x00000000       0x1c build/./libmaple/usb/usb.o
+ .text.usbBlockingSendByte
+                0x00000000       0x58 build/./libmaple/usb/usb.o
+ .text.usbSendBytes
+                0x00000000       0x5c build/./libmaple/usb/usb.o
+ .text.usbBytesAvailable
+                0x00000000        0xc build/./libmaple/usb/usb.o
+ .text.usbReceiveBytes
+                0x00000000       0x48 build/./libmaple/usb/usb.o
+ .text.usbSendHello
+                0x00000000       0x70 build/./libmaple/usb/usb.o
+ .text.usbGetDTR
+                0x00000000       0x10 build/./libmaple/usb/usb.o
+ .text.usbGetRTS
+                0x00000000       0x10 build/./libmaple/usb/usb.o
+ .text.usbIsConfigured
+                0x00000000       0x14 build/./libmaple/usb/usb.o
+ .text.usbIsConnected
+                0x00000000       0x10 build/./libmaple/usb/usb.o
+ .text.usbGetPending
+                0x00000000        0xc build/./libmaple/usb/usb.o
+ .rodata.str1.1
+                0x00000000        0x3 build/./libmaple/usb/usb.o
+ .data.User_Standard_Requests
+                0x00000000       0x24 build/./libmaple/usb/usb.o
+ .text          0x00000000        0x0 build/./libmaple/usb/usb_callbacks.o
+ .data          0x00000000        0x0 build/./libmaple/usb/usb_callbacks.o
+ .bss           0x00000000        0x0 build/./libmaple/usb/usb_callbacks.o
+ .text.vcomSetLineState
+                0x00000000        0x2 build/./libmaple/usb/usb_callbacks.o
+ .text.usbSetConfiguration
+                0x00000000       0x18 build/./libmaple/usb/usb_callbacks.o
+ .text.usbSetDeviceAddress
+                0x00000000        0xc build/./libmaple/usb/usb_callbacks.o
+ .text          0x00000000        0x0 build/./libmaple/usb/usb_hardware.o
+ .data          0x00000000        0x0 build/./libmaple/usb/usb_hardware.o
+ .bss           0x00000000        0x0 build/./libmaple/usb/usb_hardware.o
+ .text.nvicDisableInterrupts
+                0x00000000       0x24 build/./libmaple/usb/usb_hardware.o
+ .text          0x00000000        0x0 build/./libmaple/usb/usb_lib/usb_core.o
+ .data          0x00000000        0x0 build/./libmaple/usb/usb_lib/usb_core.o
+ .bss           0x00000000        0x0 build/./libmaple/usb/usb_lib/usb_core.o
+ .text          0x00000000        0x0 build/./libmaple/usb/usb_lib/usb_init.o
+ .data          0x00000000        0x0 build/./libmaple/usb/usb_lib/usb_init.o
+ .bss           0x00000000        0x0 build/./libmaple/usb/usb_lib/usb_init.o
+ .text.USB_Init
+                0x00000000       0x38 build/./libmaple/usb/usb_lib/usb_init.o
+ .text          0x00000000        0x0 build/./libmaple/usb/usb_lib/usb_int.o
+ .data          0x00000000        0x0 build/./libmaple/usb/usb_lib/usb_int.o
+ .bss           0x00000000        0x0 build/./libmaple/usb/usb_lib/usb_int.o
+ .text.CTR_HP   0x00000000       0x80 build/./libmaple/usb/usb_lib/usb_int.o
+ .text          0x00000000        0x0 build/./libmaple/usb/usb_lib/usb_mem.o
+ .data          0x00000000        0x0 build/./libmaple/usb/usb_lib/usb_mem.o
+ .bss           0x00000000        0x0 build/./libmaple/usb/usb_lib/usb_mem.o
+ .text          0x00000000        0x0 build/./libmaple/usb/usb_lib/usb_regs.o
+ .data          0x00000000        0x0 build/./libmaple/usb/usb_lib/usb_regs.o
+ .bss           0x00000000        0x0 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetCNTR  0x00000000        0xc build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetCNTR  0x00000000        0xc build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetISTR  0x00000000        0xc build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetISTR  0x00000000        0xc build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetFNR   0x00000000        0xc build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetDADDR
+                0x00000000        0xc build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetDADDR
+                0x00000000        0xc build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetBTABLE
+                0x00000000       0x14 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetBTABLE
+                0x00000000        0xc build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetENDPOINT
+                0x00000000        0xe build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetENDPOINT
+                0x00000000       0x10 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetEPType
+                0x00000000       0x12 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetDouBleBuffEPStall
+                0x00000000       0x36 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetEPTxStatus
+                0x00000000       0x12 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetEPRxStatus
+                0x00000000       0x12 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetEPTxValid
+                0x00000000       0x1c build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetEP_KIND
+                0x00000000       0x1c build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.ClearEP_KIND
+                0x00000000       0x18 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.Set_Status_Out
+                0x00000000       0x1c build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetEPDoubleBuff
+                0x00000000       0x1c build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.ClearEPDoubleBuff
+                0x00000000       0x18 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetTxStallStatus
+                0x00000000       0x1c build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetRxStallStatus
+                0x00000000       0x1c build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.ClearEP_CTR_RX
+                0x00000000       0x18 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.ClearEP_CTR_TX
+                0x00000000       0x18 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.ToggleDTOG_RX
+                0x00000000       0x1c build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.ToggleDTOG_TX
+                0x00000000       0x1c build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetEPAddress
+                0x00000000       0x1a build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetEPAddress
+                0x00000000       0x12 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetEPCountRxReg
+                0x00000000       0x28 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetEPTxCount
+                0x00000000       0x20 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetEPDblBuffAddr
+                0x00000000       0x40 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetEPDblBuf0Addr
+                0x00000000       0x24 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetEPDblBuf1Addr
+                0x00000000       0x24 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetEPDblBuf0Addr
+                0x00000000       0x1c build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetEPDblBuf1Addr
+                0x00000000       0x1c build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetEPDblBuffCount
+                0x00000000       0xa8 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetEPDblBuf0Count
+                0x00000000       0x5c build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.SetEPDblBuf1Count
+                0x00000000       0x5c build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetEPDblBuf0Count
+                0x00000000       0x20 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetEPDblBuf1Count
+                0x00000000       0x20 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.GetEPDblBufDir
+                0x00000000       0x44 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.FreeUserBuffer
+                0x00000000       0x40 build/./libmaple/usb/usb_lib/usb_regs.o
+ .text.ToWord   0x00000000        0x6 build/./libmaple/usb/usb_lib/usb_regs.o
+ .data          0x00000000        0x0 build/./libmaple/exc.o
+ .bss           0x00000000        0x0 build/./libmaple/exc.o
+ .text          0x00000000        0x0 build/./app/ss/SerialShell.o
+ .data          0x00000000        0x0 build/./app/ss/SerialShell.o
+ .bss           0x00000000        0x0 build/./app/ss/SerialShell.o
+ .text.serial_shell
+                0x00000000        0x2 build/./app/ss/SerialShell.o
+ .text          0x00000000        0x0 build/./framework/boards/platform_config.o
+ .data          0x00000000        0x0 build/./framework/boards/platform_config.o
+ .bss           0x00000000        0x0 build/./framework/boards/platform_config.o
+ .text          0x00000000        0x0 build/./framework/system_init.o
+ .data          0x00000000        0x0 build/./framework/system_init.o
+ .bss           0x00000000        0x0 build/./framework/system_init.o
+ .text          0x00000000        0x0 build/./framework/libc_retarget.o
+ .data          0x00000000        0x0 build/./framework/libc_retarget.o
+ .bss           0x00000000        0x0 build/./framework/libc_retarget.o
+ .text          0x00000000        0x0 build/./framework/tprintf/tprintf.o
+ .data          0x00000000        0x0 build/./framework/tprintf/tprintf.o
+ .bss           0x00000000        0x0 build/./framework/tprintf/tprintf.o
+ .text.putcp    0x00000000        0xa build/./framework/tprintf/tprintf.o
+ .text.tfp_sprintf
+                0x00000000       0x2c build/./framework/tprintf/tprintf.o
+ .text          0x00000000        0x0 build/./framework/misc.o
+ .data          0x00000000        0x0 build/./framework/misc.o
+ .bss           0x00000000        0x0 build/./framework/misc.o
+ .text          0x00000000        0x0 build/main.o
+ .data          0x00000000        0x0 build/main.o
+ .bss           0x00000000        0x0 build/main.o
+ .text          0x00000000        0x0 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtend.o
+ .data          0x00000000        0x0 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtend.o
+ .bss           0x00000000        0x0 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtend.o
+ .text          0x00000000        0x0 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtn.o
+ .data          0x00000000        0x0 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtn.o
+ .bss           0x00000000        0x0 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtn.o
+ .text          0x00000000        0x0 ./support/ld/libcs3_stm32_med_density.a(stm32_vector_table.o)
+ .data          0x00000000        0x0 ./support/ld/libcs3_stm32_med_density.a(stm32_vector_table.o)
+ .bss           0x00000000        0x0 ./support/ld/libcs3_stm32_med_density.a(stm32_vector_table.o)
+ .data          0x00000000        0x0 ./support/ld/libcs3_stm32_med_density.a(stm32_isrs.o)
+ .bss           0x00000000        0x0 ./support/ld/libcs3_stm32_med_density.a(stm32_isrs.o)
+ .data          0x00000000        0x0 ./support/ld/libcs3_stm32_med_density.a(start.o)
+ .bss           0x00000000        0x0 ./support/ld/libcs3_stm32_med_density.a(start.o)
+ .ARM.extab     0x00000000        0x0 ./support/ld/libcs3_stm32_med_density.a(start.o)
+ .data          0x00000000        0x0 ./support/ld/libcs3_stm32_med_density.a(start_c.o)
+ .bss           0x00000000        0x0 ./support/ld/libcs3_stm32_med_density.a(start_c.o)
+ .data          0x00000000        0x0 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+ .bss           0x00000000        0x0 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x20000000         0x00005000         xrw
+rom              0x08000000         0x00020000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crti.o
+LOAD /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtbegin.o
+LOAD build/./libmaple/adc.o
+LOAD build/./libmaple/bkp.o
+LOAD build/./libmaple/dac.o
+LOAD build/./libmaple/dma.o
+LOAD build/./libmaple/exti.o
+LOAD build/./libmaple/flash.o
+LOAD build/./libmaple/fsmc.o
+LOAD build/./libmaple/gpio.o
+LOAD build/./libmaple/iwdg.o
+LOAD build/./libmaple/nvic.o
+LOAD build/./libmaple/pwr.o
+LOAD build/./libmaple/i2c.o
+LOAD build/./libmaple/rcc.o
+LOAD build/./libmaple/spi.o
+LOAD build/./libmaple/syscalls.o
+LOAD build/./libmaple/systick.o
+LOAD build/./libmaple/timer.o
+LOAD build/./libmaple/usart.o
+LOAD build/./libmaple/util.o
+LOAD build/./libmaple/usb/descriptors.o
+LOAD build/./libmaple/usb/usb.o
+LOAD build/./libmaple/usb/usb_callbacks.o
+LOAD build/./libmaple/usb/usb_hardware.o
+LOAD build/./libmaple/usb/usb_lib/usb_core.o
+LOAD build/./libmaple/usb/usb_lib/usb_init.o
+LOAD build/./libmaple/usb/usb_lib/usb_int.o
+LOAD build/./libmaple/usb/usb_lib/usb_mem.o
+LOAD build/./libmaple/usb/usb_lib/usb_regs.o
+LOAD build/./libmaple/exc.o
+LOAD build/./app/ss/SerialShell.o
+LOAD build/./framework/boards/platform_config.o
+LOAD build/./framework/system_init.o
+LOAD build/./framework/libc_retarget.o
+LOAD build/./framework/tprintf/tprintf.o
+LOAD build/./framework/misc.o
+LOAD build/main.o
+START GROUP
+LOAD /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/libgcc.a
+LOAD /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb2/libc.a
+END GROUP
+LOAD /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtend.o
+LOAD /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtn.o
+START GROUP
+LOAD ./support/ld/libcs3_stm32_med_density.a
+END GROUP
+START GROUP
+LOAD /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/libgcc.a
+LOAD /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb2/libc.a
+LOAD /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb2/libm.a
+END GROUP
+                0x20005000                PROVIDE (__cs3_stack, (__cs3_region_start_ram + __cs3_region_size_ram))
+                0x0800230c                PROVIDE (__cs3_reset, _start)
+                0x200004c8                PROVIDE (__cs3_heap_start, _end)
+                0x20005000                PROVIDE (__cs3_heap_end, (__cs3_region_start_ram + 0x5000))
+
+.text           0x08000000     0x26ac
+ CREATE_OBJECT_SYMBOLS
+                0x08000000                __cs3_region_start_rom = .
+ *(.cs3.region-head.rom)
+                0x08000000                __cs3_interrupt_vector = __cs3_stm32_vector_table
+ *(.cs3.interrupt_vector)
+ .cs3.interrupt_vector
+                0x08000000       0xec ./support/ld/libcs3_stm32_med_density.a(stm32_vector_table.o)
+                0x08000000                __cs3_stm32_vector_table
+                0x08000001                ASSERT ((. != __cs3_stm32_vector_table), No interrupt vector)
+ *(.rom)
+ *(.rom.b)
+ *(.rom)
+ *(.rom.b)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x080000ec       0x30 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtbegin.o
+ .text.bb_perip
+                0x0800011c        0xc build/./libmaple/adc.o
+ .text.adc_init
+                0x08000128       0x14 build/./libmaple/adc.o
+                0x08000128                adc_init
+ .text.adc_set_extsel
+                0x0800013c       0x10 build/./libmaple/adc.o
+                0x0800013c                adc_set_extsel
+ .text.adc_foreach
+                0x0800014c       0x1c build/./libmaple/adc.o
+                0x0800014c                adc_foreach
+ .text.adc_set_sample_rate
+                0x08000168       0x28 build/./libmaple/adc.o
+                0x08000168                adc_set_sample_rate
+ .text.adc_calibrate
+                0x08000190       0x2c build/./libmaple/adc.o
+                0x08000190                adc_calibrate
+ .text.dma_clear_isr_bits
+                0x080001bc       0x10 build/./libmaple/dma.o
+ .text.dispatch_handler
+                0x080001cc       0x1c build/./libmaple/dma.o
+ .text.__irq_dma_channel1
+                0x080001e8       0x10 build/./libmaple/dma.o
+                0x080001e8                __irq_dma_channel1
+ .text.__irq_dma_channel2
+                0x080001f8       0x10 build/./libmaple/dma.o
+                0x080001f8                __irq_dma_channel2
+ .text.__irq_dma_channel3
+                0x08000208       0x10 build/./libmaple/dma.o
+                0x08000208                __irq_dma_channel3
+ .text.__irq_dma_channel4
+                0x08000218       0x10 build/./libmaple/dma.o
+                0x08000218                __irq_dma_channel4
+ .text.__irq_dma_channel5
+                0x08000228       0x10 build/./libmaple/dma.o
+                0x08000228                __irq_dma_channel5
+ .text.__irq_dma_channel6
+                0x08000238       0x10 build/./libmaple/dma.o
+                0x08000238                __irq_dma_channel6
+ .text.__irq_dma_channel7
+                0x08000248       0x10 build/./libmaple/dma.o
+                0x08000248                __irq_dma_channel7
+ .text.__bb_addr
+                0x08000258        0xc build/./libmaple/exti.o
+ .text.bb_perip
+                0x08000264        0xc build/./libmaple/exti.o
+ .text.clear_pending
+                0x08000270       0x18 build/./libmaple/exti.o
+ .text.dispatch_handler
+                0x08000288       0x2c build/./libmaple/exti.o
+ .text.__irq_exti0
+                0x080002b4       0x12 build/./libmaple/exti.o
+                0x080002b4                __irq_exti0
+ .text.__irq_exti1
+                0x080002c6       0x12 build/./libmaple/exti.o
+                0x080002c6                __irq_exti1
+ .text.__irq_exti2
+                0x080002d8       0x12 build/./libmaple/exti.o
+                0x080002d8                __irq_exti2
+ .text.__irq_exti3
+                0x080002ea       0x12 build/./libmaple/exti.o
+                0x080002ea                __irq_exti3
+ .text.__irq_exti4
+                0x080002fc       0x12 build/./libmaple/exti.o
+                0x080002fc                __irq_exti4
+ *fill*         0x0800030e        0x2 00
+ .text.__irq_exti9_5
+                0x08000310       0x30 build/./libmaple/exti.o
+                0x08000310                __irq_exti9_5
+ .text.__irq_exti15_10
+                0x08000340       0x30 build/./libmaple/exti.o
+                0x08000340                __irq_exti15_10
+ .text.flash_enable_prefetch
+                0x08000370        0xc build/./libmaple/flash.o
+                0x08000370                flash_enable_prefetch
+ .text.flash_set_latency
+                0x0800037c       0x14 build/./libmaple/flash.o
+                0x0800037c                flash_set_latency
+ .text.gpio_init
+                0x08000390       0x14 build/./libmaple/gpio.o
+                0x08000390                gpio_init
+ .text.gpio_init_all
+                0x080003a4       0x30 build/./libmaple/gpio.o
+                0x080003a4                gpio_init_all
+ .text.gpio_set_mode
+                0x080003d4       0x52 build/./libmaple/gpio.o
+                0x080003d4                gpio_set_mode
+ .text.afio_init
+                0x08000426       0x12 build/./libmaple/gpio.o
+                0x08000426                afio_init
+ .text.nvic_irq_set_priority
+                0x08000438       0x28 build/./libmaple/nvic.o
+                0x08000438                nvic_irq_set_priority
+ .text.nvic_set_vector_table
+                0x08000460       0x14 build/./libmaple/nvic.o
+                0x08000460                nvic_set_vector_table
+ .text.nvic_init
+                0x08000474       0x24 build/./libmaple/nvic.o
+                0x08000474                nvic_init
+ .text.i2c_write
+                0x08000498        0x6 build/./libmaple/i2c.o
+ .text.i2c_start_condition
+                0x0800049e       0x14 build/./libmaple/i2c.o
+ .text.i2c_stop_condition
+                0x080004b2       0x1c build/./libmaple/i2c.o
+ .text.i2c_enable_irq
+                0x080004ce        0xc build/./libmaple/i2c.o
+ .text.i2c_disable_irq
+                0x080004da        0xc build/./libmaple/i2c.o
+ .text.i2c_disable_ack
+                0x080004e6        0xc build/./libmaple/i2c.o
+ *fill*         0x080004f2        0x2 00
+ .text.systick_uptime
+                0x080004f4        0xc build/./libmaple/i2c.o
+ .text.i2c_irq_error_handler
+                0x08000500       0x28 build/./libmaple/i2c.o
+ .text.i2c_irq_handler
+                0x08000528      0x164 build/./libmaple/i2c.o
+ .text.__irq_i2c1_ev
+                0x0800068c        0xc build/./libmaple/i2c.o
+                0x0800068c                __irq_i2c1_ev
+ .text.__irq_i2c2_ev
+                0x08000698        0xc build/./libmaple/i2c.o
+                0x08000698                __irq_i2c2_ev
+ .text.__irq_i2c1_er
+                0x080006a4        0xc build/./libmaple/i2c.o
+                0x080006a4                __irq_i2c1_er
+ .text.__irq_i2c2_er
+                0x080006b0        0xc build/./libmaple/i2c.o
+                0x080006b0                __irq_i2c2_er
+ .text.bb_peri_set_bit
+                0x080006bc        0xe build/./libmaple/rcc.o
+ *fill*         0x080006ca        0x2 00
+ .text.rcc_clk_init
+                0x080006cc       0x64 build/./libmaple/rcc.o
+                0x080006cc                rcc_clk_init
+ .text.rcc_dev_clk
+                0x08000730        0xc build/./libmaple/rcc.o
+                0x08000730                rcc_dev_clk
+ .text.rcc_reset_dev
+                0x0800073c       0x38 build/./libmaple/rcc.o
+                0x0800073c                rcc_reset_dev
+ .text.rcc_clk_enable
+                0x08000774       0x28 build/./libmaple/rcc.o
+                0x08000774                rcc_clk_enable
+ .text.rcc_set_prescaler
+                0x0800079c       0x20 build/./libmaple/rcc.o
+                0x0800079c                rcc_set_prescaler
+ .text.systick_enable
+                0x080007bc        0xc build/./libmaple/systick.o
+                0x080007bc                systick_enable
+ .text.systick_init
+                0x080007c8        0xc build/./libmaple/systick.o
+                0x080007c8                systick_init
+ .text.__exc_systick
+                0x080007d4       0x10 build/./libmaple/systick.o
+                0x080007d4                __exc_systick
+ .text.dispatch_cc_irqs
+                0x080007e4       0x5c build/./libmaple/timer.o
+ .text.bb_perip
+                0x08000840        0xc build/./libmaple/timer.o
+ .text.dispatch_irq
+                0x0800084c       0x2a build/./libmaple/timer.o
+ .text.dispatch_general
+                0x08000876       0x20 build/./libmaple/timer.o
+ .text.timer_init
+                0x08000896       0x14 build/./libmaple/timer.o
+                0x08000896                timer_init
+ .text.timer_disable
+                0x080008aa       0x12 build/./libmaple/timer.o
+                0x080008aa                timer_disable
+ .text.timer_foreach
+                0x080008bc       0x30 build/./libmaple/timer.o
+                0x080008bc                timer_foreach
+ .text.__irq_tim1_brk
+                0x080008ec       0x10 build/./libmaple/timer.o
+                0x080008ec                __irq_tim1_brk
+ .text.__irq_tim1_up
+                0x080008fc       0x10 build/./libmaple/timer.o
+                0x080008fc                __irq_tim1_up
+ .text.__irq_tim1_trg_com
+                0x0800090c       0x24 build/./libmaple/timer.o
+                0x0800090c                __irq_tim1_trg_com
+ .text.__irq_tim1_cc
+                0x08000930        0xc build/./libmaple/timer.o
+                0x08000930                __irq_tim1_cc
+ .text.__irq_tim2
+                0x0800093c        0xc build/./libmaple/timer.o
+                0x0800093c                __irq_tim2
+ .text.__irq_tim3
+                0x08000948        0xc build/./libmaple/timer.o
+                0x08000948                __irq_tim3
+ .text.__irq_tim4
+                0x08000954        0xc build/./libmaple/timer.o
+                0x08000954                __irq_tim4
+ .text.usart_irq
+                0x08000960       0x42 build/./libmaple/usart.o
+ *fill*         0x080009a2        0x2 00
+ .text.usart_init
+                0x080009a4       0x40 build/./libmaple/usart.o
+                0x080009a4                usart_init
+ .text.usart_set_baud_rate
+                0x080009e4       0x30 build/./libmaple/usart.o
+                0x080009e4                usart_set_baud_rate
+ .text.usart_enable
+                0x08000a14       0x10 build/./libmaple/usart.o
+                0x08000a14                usart_enable
+ .text.usart_disable
+                0x08000a24       0x22 build/./libmaple/usart.o
+                0x08000a24                usart_disable
+ *fill*         0x08000a46        0x2 00
+ .text.usart_foreach
+                0x08000a48       0x24 build/./libmaple/usart.o
+                0x08000a48                usart_foreach
+ .text.usart_tx
+                0x08000a6c       0x1c build/./libmaple/usart.o
+                0x08000a6c                usart_tx
+ .text.usart_putudec
+                0x08000a88       0x40 build/./libmaple/usart.o
+                0x08000a88                usart_putudec
+ .text.__irq_usart1
+                0x08000ac8        0xc build/./libmaple/usart.o
+                0x08000ac8                __irq_usart1
+ .text.__irq_usart2
+                0x08000ad4        0xc build/./libmaple/usart.o
+                0x08000ad4                __irq_usart2
+ .text.__irq_usart3
+                0x08000ae0        0xc build/./libmaple/usart.o
+                0x08000ae0                __irq_usart3
+ .text.nvic_irq_enable
+                0x08000aec       0x1c build/./libmaple/util.o
+ .text.usart_putc
+                0x08000b08       0x18 build/./libmaple/util.o
+ .text.usart_putstr
+                0x08000b20       0x18 build/./libmaple/util.o
+ .text.gpio_write_bit.clone.0.clone.1
+                0x08000b38        0xc build/./libmaple/util.o
+ .text.adc_disable
+                0x08000b44       0x10 build/./libmaple/util.o
+ .text.throb    0x08000b54       0x4c build/./libmaple/util.o
+                0x08000b54                throb
+ .text.__error  0x08000ba0       0x48 build/./libmaple/util.o
+                0x08000ba0                __error
+ .text._fail    0x08000be8       0x8c build/./libmaple/util.o
+                0x08000be8                _fail
+ .text.usbSuspend
+                0x08000c74       0x1c build/./libmaple/usb/usb.o
+                0x08000c74                usbSuspend
+ .text.usbResumeInit
+                0x08000c90       0x1c build/./libmaple/usb/usb.o
+                0x08000c90                usbResumeInit
+ .text.usbResume
+                0x08000cac       0x88 build/./libmaple/usb/usb.o
+                0x08000cac                usbResume
+ .text.usbPowerOn
+                0x08000d34       0x28 build/./libmaple/usb/usb.o
+                0x08000d34                usbPowerOn
+ .text.usbEnbISR
+                0x08000d5c       0x20 build/./libmaple/usb/usb.o
+                0x08000d5c                usbEnbISR
+ .text.__irq_usb_lp_can_rx0
+                0x08000d7c       0xd0 build/./libmaple/usb/usb.o
+                0x08000d7c                __irq_usb_lp_can_rx0
+ .text.usbWaitReset
+                0x08000e4c       0x10 build/./libmaple/usb/usb.o
+                0x08000e4c                usbWaitReset
+ .text.vcomGetSetLineCoding
+                0x08000e5c       0x18 build/./libmaple/usb/usb_callbacks.o
+                0x08000e5c                vcomGetSetLineCoding
+ .text.vcomDataTxCb
+                0x08000e74        0xc build/./libmaple/usb/usb_callbacks.o
+                0x08000e74                vcomDataTxCb
+ .text.vcomDataRxCb
+                0x08000e80       0xac build/./libmaple/usb/usb_callbacks.o
+                0x08000e80                vcomDataRxCb
+ .text.vcomManagementCb
+                0x08000f2c        0x2 build/./libmaple/usb/usb_callbacks.o
+                0x08000f2c                vcomManagementCb
+ *fill*         0x08000f2e        0x2 00
+ .text.usbInit  0x08000f30       0x3c build/./libmaple/usb/usb_callbacks.o
+                0x08000f30                usbInit
+ .text.usbReset
+                0x08000f6c      0x11c build/./libmaple/usb/usb_callbacks.o
+                0x08000f6c                usbReset
+ .text.usbStatusIn
+                0x08001088        0x2 build/./libmaple/usb/usb_callbacks.o
+                0x08001088                usbStatusIn
+ .text.usbStatusOut
+                0x0800108a        0x2 build/./libmaple/usb/usb_callbacks.o
+                0x0800108a                usbStatusOut
+ .text.usbDataSetup
+                0x0800108c       0x44 build/./libmaple/usb/usb_callbacks.o
+                0x0800108c                usbDataSetup
+ .text.usbNoDataSetup
+                0x080010d0       0x64 build/./libmaple/usb/usb_callbacks.o
+                0x080010d0                usbNoDataSetup
+ .text.usbGetInterfaceSetting
+                0x08001134       0x10 build/./libmaple/usb/usb_callbacks.o
+                0x08001134                usbGetInterfaceSetting
+ .text.usbGetDeviceDescriptor
+                0x08001144        0xc build/./libmaple/usb/usb_callbacks.o
+                0x08001144                usbGetDeviceDescriptor
+ .text.usbGetConfigDescriptor
+                0x08001150        0xc build/./libmaple/usb/usb_callbacks.o
+                0x08001150                usbGetConfigDescriptor
+ .text.usbGetStringDescriptor
+                0x0800115c       0x20 build/./libmaple/usb/usb_callbacks.o
+                0x0800115c                usbGetStringDescriptor
+ .text.nvicInit
+                0x0800117c       0x68 build/./libmaple/usb/usb_hardware.o
+                0x0800117c                nvicInit
+ .text.systemHardReset
+                0x080011e4       0x14 build/./libmaple/usb/usb_hardware.o
+                0x080011e4                systemHardReset
+ .text.Standard_GetConfiguration
+                0x080011f8       0x24 build/./libmaple/usb/usb_lib/usb_core.o
+                0x080011f8                Standard_GetConfiguration
+ .text.Standard_GetInterface
+                0x0800121c       0x24 build/./libmaple/usb/usb_lib/usb_core.o
+                0x0800121c                Standard_GetInterface
+ .text.Standard_GetStatus
+                0x08001240       0xa8 build/./libmaple/usb/usb_lib/usb_core.o
+                0x08001240                Standard_GetStatus
+ .text.DataStageIn
+                0x080012e8       0xa8 build/./libmaple/usb/usb_lib/usb_core.o
+ .text.Standard_SetConfiguration
+                0x08001390       0x3c build/./libmaple/usb/usb_lib/usb_core.o
+                0x08001390                Standard_SetConfiguration
+ .text.Standard_SetInterface
+                0x080013cc       0x4c build/./libmaple/usb/usb_lib/usb_core.o
+                0x080013cc                Standard_SetInterface
+ .text.Standard_ClearFeature
+                0x08001418       0xe4 build/./libmaple/usb/usb_lib/usb_core.o
+                0x08001418                Standard_ClearFeature
+ .text.Standard_SetEndPointFeature
+                0x080014fc       0x94 build/./libmaple/usb/usb_lib/usb_core.o
+                0x080014fc                Standard_SetEndPointFeature
+ .text.Standard_SetDeviceFeature
+                0x08001590       0x24 build/./libmaple/usb/usb_lib/usb_core.o
+                0x08001590                Standard_SetDeviceFeature
+ .text.Standard_GetDescriptorData
+                0x080015b4       0x1c build/./libmaple/usb/usb_lib/usb_core.o
+                0x080015b4                Standard_GetDescriptorData
+ .text.Post0_Process
+                0x080015d0       0x44 build/./libmaple/usb/usb_lib/usb_core.o
+                0x080015d0                Post0_Process
+ .text.Out0_Process
+                0x08001614       0xc8 build/./libmaple/usb/usb_lib/usb_core.o
+                0x08001614                Out0_Process
+ .text.Setup0_Process
+                0x080016dc      0x2f8 build/./libmaple/usb/usb_lib/usb_core.o
+                0x080016dc                Setup0_Process
+ .text.SetDeviceAddress
+                0x080019d4       0x3c build/./libmaple/usb/usb_lib/usb_core.o
+                0x080019d4                SetDeviceAddress
+ .text.In0_Process
+                0x08001a10       0x5c build/./libmaple/usb/usb_lib/usb_core.o
+                0x08001a10                In0_Process
+ .text.NOP_Process
+                0x08001a6c        0x2 build/./libmaple/usb/usb_lib/usb_core.o
+                0x08001a6c                NOP_Process
+ *fill*         0x08001a6e        0x2 00
+ .text.CTR_LP   0x08001a70      0x17c build/./libmaple/usb/usb_lib/usb_int.o
+                0x08001a70                CTR_LP
+ .text.UserToPMABufferCopy
+                0x08001bec       0x2e build/./libmaple/usb/usb_lib/usb_mem.o
+                0x08001bec                UserToPMABufferCopy
+ .text.PMAToUserBufferCopy
+                0x08001c1a       0x20 build/./libmaple/usb/usb_lib/usb_mem.o
+                0x08001c1a                PMAToUserBufferCopy
+ .text.SetEPType
+                0x08001c3a       0x1a build/./libmaple/usb/usb_lib/usb_regs.o
+                0x08001c3a                SetEPType
+ .text.SetEPTxStatus
+                0x08001c54       0x30 build/./libmaple/usb/usb_lib/usb_regs.o
+                0x08001c54                SetEPTxStatus
+ .text.SetEPRxStatus
+                0x08001c84       0x30 build/./libmaple/usb/usb_lib/usb_regs.o
+                0x08001c84                SetEPRxStatus
+ .text.SetEPRxValid
+                0x08001cb4       0x1c build/./libmaple/usb/usb_lib/usb_regs.o
+                0x08001cb4                SetEPRxValid
+ .text.Clear_Status_Out
+                0x08001cd0       0x18 build/./libmaple/usb/usb_lib/usb_regs.o
+                0x08001cd0                Clear_Status_Out
+ .text.ClearDTOG_RX
+                0x08001ce8       0x24 build/./libmaple/usb/usb_lib/usb_regs.o
+                0x08001ce8                ClearDTOG_RX
+ .text.ClearDTOG_TX
+                0x08001d0c       0x24 build/./libmaple/usb/usb_lib/usb_regs.o
+                0x08001d0c                ClearDTOG_TX
+ .text.SetEPTxAddr
+                0x08001d30       0x24 build/./libmaple/usb/usb_lib/usb_regs.o
+                0x08001d30                SetEPTxAddr
+ .text.SetEPRxAddr
+                0x08001d54       0x24 build/./libmaple/usb/usb_lib/usb_regs.o
+                0x08001d54                SetEPRxAddr
+ .text.GetEPTxAddr
+                0x08001d78       0x1c build/./libmaple/usb/usb_lib/usb_regs.o
+                0x08001d78                GetEPTxAddr
+ .text.GetEPRxAddr
+                0x08001d94       0x1c build/./libmaple/usb/usb_lib/usb_regs.o
+                0x08001d94                GetEPRxAddr
+ .text.SetEPTxCount
+                0x08001db0       0x1c build/./libmaple/usb/usb_lib/usb_regs.o
+                0x08001db0                SetEPTxCount
+ .text.SetEPRxCount
+                0x08001dcc       0x40 build/./libmaple/usb/usb_lib/usb_regs.o
+                0x08001dcc                SetEPRxCount
+ .text.GetEPRxCount
+                0x08001e0c       0x20 build/./libmaple/usb/usb_lib/usb_regs.o
+                0x08001e0c                GetEPRxCount
+ .text.ByteSwap
+                0x08001e2c        0xa build/./libmaple/usb/usb_lib/usb_regs.o
+                0x08001e2c                ByteSwap
+ *fill*         0x08001e36        0xa 00
+ .text          0x08001e40       0x60 build/./libmaple/exc.o
+                0x08001e40                __exc_nmi
+                0x08001e44                __exc_hardfault
+                0x08001e48                __exc_memmanage
+                0x08001e4c                __exc_busfault
+                0x08001e50                __exc_usagefault
+ .text.usart_putc
+                0x08001ea0       0x18 build/./framework/system_init.o
+ .text._io_putc
+                0x08001eb8        0xc build/./framework/system_init.o
+ .text.bb_perip
+                0x08001ec4        0xc build/./framework/system_init.o
+ .text.adcDefaultConfig
+                0x08001ed0       0x3e build/./framework/system_init.o
+ .text.timerDefaultConfig
+                0x08001f0e       0x94 build/./framework/system_init.o
+ *fill*         0x08001fa2        0x2 00
+ .text.system_init
+                0x08001fa4       0xdc build/./framework/system_init.o
+                0x08001fa4                system_init
+ .text.ui2a     0x08002080       0x4c build/./framework/tprintf/tprintf.o
+ .text.putchw   0x080020cc       0x4a build/./framework/tprintf/tprintf.o
+ .text.tfp_format
+                0x08002116      0x150 build/./framework/tprintf/tprintf.o
+                0x08002116                tfp_format
+ *fill*         0x08002266        0x2 00
+ .text.init_printf
+                0x08002268       0x14 build/./framework/tprintf/tprintf.o
+                0x08002268                init_printf
+ .text.tfp_printf
+                0x0800227c       0x28 build/./framework/tprintf/tprintf.o
+                0x0800227c                tfp_printf
+ .text.delayMicroseconds
+                0x080022a4        0xe build/./framework/misc.o
+                0x080022a4                delayMicroseconds
+ .text.delay    0x080022b2       0x18 build/./framework/misc.o
+                0x080022b2                delay
+ .text.gpio_toggle_bit.clone.0.clone.1
+                0x080022ca        0xa build/main.o
+ .text.main     0x080022d4       0x34 build/main.o
+                0x080022d4                main
+ .text          0x08002308        0x2 ./support/ld/libcs3_stm32_med_density.a(stm32_isrs.o)
+                0x08002308                __stm32reservedexception9
+                0x08002308                __irq_dma1_channel3
+                0x08002308                __irq_dma1_channel6
+                0x08002308                __exc_debug_monitor
+                0x08002308                __irq_dma1_channel1
+                0x08002308                __exc_svc
+                0x08002308                __irq_dma1_channel4
+                0x08002308                __irq_adc
+                0x08002308                __irq_dma1_channel7
+                0x08002308                __irq_can_rx1
+                0x08002308                __irq_spi2
+                0x08002308                __irq_can_sce
+                0x08002308                __irq_pvd
+                0x08002308                __irq_tamper
+                0x08002308                __default_handler
+                0x08002308                __irq_wwdg
+                0x08002308                __stm32reservedexception10
+                0x08002308                __irq_flash
+                0x08002308                __irq_dma1_channel2
+                0x08002308                __irq_dma1_channel5
+                0x08002308                __stm32reservedexception13
+                0x08002308                __irq_rtc
+                0x08002308                __irq_spi1
+                0x08002308                __stm32reservedexception7
+                0x08002308                __irq_usb_hp_can_tx
+                0x08002308                __irq_rtcalarm
+                0x08002308                __stm32reservedexception8
+                0x08002308                __exc_pendsv
+                0x08002308                __irq_usbwakeup
+                0x08002308                __irq_rcc
+ *fill*         0x0800230a        0x2 00
+ .text          0x0800230c       0x10 ./support/ld/libcs3_stm32_med_density.a(start.o)
+                0x0800230c                _start
+ .text          0x0800231c       0xf4 ./support/ld/libcs3_stm32_med_density.a(start_c.o)
+                0x0800231c                __cs3_start_c
+ .text          0x08002410       0x50 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+                0x08002410                __libc_init_array
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.1
+                0x08002460       0x30 build/./libmaple/exti.o
+                                 0x38 (size before relaxing)
+ .rodata.GPIOA  0x08002490        0x4 build/./libmaple/gpio.o
+                0x08002490                GPIOA
+ .rodata.masks.4158
+                0x08002494       0x14 build/./libmaple/rcc.o
+ .rodata.enable_regs.4140
+                0x080024a8        0xc build/./libmaple/rcc.o
+ .rodata.reset_regs.4147
+                0x080024b4        0x8 build/./libmaple/rcc.o
+ .rodata.str1.1
+                0x080024bc       0x49 build/./libmaple/rcc.o
+ .rodata.rcc_dev_table
+                0x08002505       0x32 build/./libmaple/rcc.o
+ .rodata.str1.1
+                0x08002537       0x91 build/./libmaple/timer.o
+ .rodata.str1.1
+                0x080025c8       0x1a build/./libmaple/util.o
+                                 0x1d (size before relaxing)
+ .rodata.usbVcomDescriptor_iProduct
+                0x080025e2       0x12 build/./libmaple/usb/descriptors.o
+                0x080025e2                usbVcomDescriptor_iProduct
+ .rodata.usbVcomDescriptor_iManufacturer
+                0x080025f4       0x12 build/./libmaple/usb/descriptors.o
+                0x080025f4                usbVcomDescriptor_iManufacturer
+ .rodata.usbVcomDescriptor_Device
+                0x08002606       0x12 build/./libmaple/usb/descriptors.o
+                0x08002606                usbVcomDescriptor_Device
+ .rodata.usbVcomDescriptor_Config
+                0x08002618       0x44 build/./libmaple/usb/descriptors.o
+                0x08002618                usbVcomDescriptor_Config
+ .rodata.usbVcomDescriptor_LangID
+                0x0800265c        0x4 build/./libmaple/usb/descriptors.o
+                0x0800265c                usbVcomDescriptor_LangID
+ .rodata.C.12.5974
+                0x08002660        0x4 build/./libmaple/usb/usb_callbacks.o
+ .rodata.str1.1
+                0x08002664       0x12 build/main.o
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+ *(.eh_frame_hdr)
+ *(.eh_frame)
+                0x08002678                . = ALIGN (0x4)
+ *fill*         0x08002676        0x2 00
+ *(.init)
+ .init          0x08002678        0x4 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crti.o
+                0x08002678                _init
+ .init          0x0800267c        0x8 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtn.o
+                0x08002684                . = ALIGN (0x4)
+                0x08002684                __preinit_array_start = .
+ *(.preinit_array)
+                0x08002684                __preinit_array_end = .
+                0x08002684                . = ALIGN (0x4)
+                0x08002684                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x08002684        0x4 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtbegin.o
+                0x08002688                __init_array_end = .
+                0x08002688                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x08002688                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x08002688        0x4 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crti.o
+                0x08002688                _fini
+ .fini          0x0800268c        0x8 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtn.o
+                0x08002694                . = ALIGN (0x4)
+                0x08002694                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x08002694        0x4 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x08002698                __fini_array_end = .
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x08002698                . = ALIGN (0x4)
+                0x08002698                __cs3_regions = .
+                0x08002698        0x4 LONG 0x0
+                0x0800269c        0x4 LONG 0x80026b8 __cs3_region_init_ram
+                0x080026a0        0x4 LONG 0x20000000 __cs3_region_start_ram
+                0x080026a4        0x4 LONG 0x370 __cs3_region_init_size_ram
+                0x080026a8        0x4 LONG 0x158 __cs3_region_zero_size_ram
+                0x080026ac                __exidx_start = .
+
+.v4_bx          0x080026ac        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.exidx      0x080026ac        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x080026ac        0x8 ./support/ld/libcs3_stm32_med_density.a(start.o)
+                0x080026b4                __exidx_end = .
+
+.text.align     0x080026b4        0x4
+                0x080026b8                . = ALIGN (0x8)
+ *fill*         0x080026b4        0x4 00
+                0x080026b8                _etext = .
+
+.USER_FLASH
+ *(.USER_FLASH)
+                0x08020000                __cs3_region_end_rom = (__cs3_region_start_rom + 0x20000)
+                0x00020000                __cs3_region_size_rom = 0x20000
+                0x00000001                __cs3_region_num = 0x1
+
+.data           0x20000000      0x370 load address 0x080026b8
+                0x20000000                ram_begin = DEFINED (RAM_BUILD)?.:.
+ *(.cs3.region-head.ram_begin)
+                0x20000000                __cs3_region_start_ram = .
+ *(.cs3.region-head.ram)
+ *(.jcr)
+ .jcr           0x20000000        0x0 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtbegin.o
+ .jcr           0x20000000        0x4 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.adc1     0x20000004        0x8 build/./libmaple/adc.o
+ .data.adc2     0x2000000c        0x8 build/./libmaple/adc.o
+ .data.ADC1     0x20000014        0x4 build/./libmaple/adc.o
+                0x20000014                ADC1
+ .data.ADC2     0x20000018        0x4 build/./libmaple/adc.o
+                0x20000018                ADC2
+ .data.dma1     0x2000001c       0x40 build/./libmaple/dma.o
+ .data.DMA1     0x2000005c        0x4 build/./libmaple/dma.o
+                0x2000005c                DMA1
+ .data.exti_channels
+                0x20000060       0x80 build/./libmaple/exti.o
+ .data.gpioa    0x200000e0        0x8 build/./libmaple/gpio.o
+                0x200000e0                gpioa
+ .data.gpiob    0x200000e8        0x8 build/./libmaple/gpio.o
+                0x200000e8                gpiob
+ .data.gpioc    0x200000f0        0x8 build/./libmaple/gpio.o
+                0x200000f0                gpioc
+ .data.gpiod    0x200000f8        0x8 build/./libmaple/gpio.o
+                0x200000f8                gpiod
+ .data.i2c_dev1
+                0x20000100       0x1c build/./libmaple/i2c.o
+ .data.i2c_dev2
+                0x2000011c       0x1c build/./libmaple/i2c.o
+ .data.timer3   0x20000138       0x20 build/./libmaple/timer.o
+ .data.timer4   0x20000158       0x20 build/./libmaple/timer.o
+ .data.TIMER1   0x20000178        0x4 build/./libmaple/timer.o
+                0x20000178                TIMER1
+ .data.TIMER2   0x2000017c        0x4 build/./libmaple/timer.o
+                0x2000017c                TIMER2
+ .data.TIMER3   0x20000180        0x4 build/./libmaple/timer.o
+                0x20000180                TIMER3
+ .data.TIMER4   0x20000184        0x4 build/./libmaple/timer.o
+                0x20000184                TIMER4
+ .data.timer1   0x20000188       0x28 build/./libmaple/timer.o
+ .data.timer2   0x200001b0       0x20 build/./libmaple/timer.o
+ .data.USART1   0x200001d0        0x4 build/./libmaple/usart.o
+                0x200001d0                USART1
+ .data.USART2   0x200001d4        0x4 build/./libmaple/usart.o
+                0x200001d4                USART2
+ .data.USART3   0x200001d8        0x4 build/./libmaple/usart.o
+                0x200001d8                USART3
+ .data.usart1   0x200001dc       0x50 build/./libmaple/usart.o
+ .data.usart2   0x2000022c       0x50 build/./libmaple/usart.o
+ .data.usart3   0x2000027c       0x50 build/./libmaple/usart.o
+ .data.Device_Property
+                0x200002cc       0x30 build/./libmaple/usb/usb.o
+                0x200002cc                Device_Property
+ .data.pEpInt_IN
+                0x200002fc       0x1c build/./libmaple/usb/usb.o
+                0x200002fc                pEpInt_IN
+ .data.pEpInt_OUT
+                0x20000318       0x1c build/./libmaple/usb/usb.o
+                0x20000318                pEpInt_OUT
+ .data.Device_Table
+                0x20000334        0x2 build/./libmaple/usb/usb.o
+                0x20000334                Device_Table
+ *fill*         0x20000336        0x2 00
+ .data.Config_Descriptor
+                0x20000338        0x8 build/./libmaple/usb/usb_callbacks.o
+                0x20000338                Config_Descriptor
+ .data.maxNewBytes
+                0x20000340        0x4 build/./libmaple/usb/usb_callbacks.o
+                0x20000340                maxNewBytes
+ .data.Device_Descriptor
+                0x20000344        0x8 build/./libmaple/usb/usb_callbacks.o
+                0x20000344                Device_Descriptor
+ .data.String_Descriptor
+                0x2000034c       0x18 build/./libmaple/usb/usb_callbacks.o
+                0x2000034c                String_Descriptor
+ .data.line_coding
+                0x20000364        0x8 build/./libmaple/usb/usb_callbacks.o
+                0x20000364                line_coding
+ *(.ram)
+                0x20000370                . = ALIGN (0x8)
+ *fill*         0x2000036c        0x4 00
+                0x20000370                _edata = .
+
+.bss            0x20000370      0x158 load address 0x08002a28
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x20000370        0x1 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtbegin.o
+ *fill*         0x20000371        0x3 00
+ .bss.usart1_rb
+                0x20000374        0xc build/./libmaple/usart.o
+ .bss.usart2_rb
+                0x20000380        0xc build/./libmaple/usart.o
+ .bss.usart3_rb
+                0x2000038c        0xc build/./libmaple/usart.o
+ .bss.bIntPackSOF
+                0x20000398        0x4 build/./libmaple/usb/usb.o
+                0x20000398                bIntPackSOF
+ .bss.wIstr     0x2000039c        0x2 build/./libmaple/usb/usb.o
+                0x2000039c                wIstr
+ *fill*         0x2000039e        0x2 00
+ .bss.bDeviceState
+                0x200003a0        0x4 build/./libmaple/usb/usb.o
+                0x200003a0                bDeviceState
+ .bss.line_dtr_rts
+                0x200003a4        0x1 build/./libmaple/usb/usb_callbacks.o
+                0x200003a4                line_dtr_rts
+ *fill*         0x200003a5        0x3 00
+ .bss.recvBufOut
+                0x200003a8        0x4 build/./libmaple/usb/usb_callbacks.o
+                0x200003a8                recvBufOut
+ .bss.reset_state
+                0x200003ac        0x1 build/./libmaple/usb/usb_callbacks.o
+                0x200003ac                reset_state
+ .bss.last_request
+                0x200003ad        0x1 build/./libmaple/usb/usb_callbacks.o
+                0x200003ad                last_request
+ *fill*         0x200003ae        0x2 00
+ .bss.newBytes  0x200003b0        0x4 build/./libmaple/usb/usb_callbacks.o
+                0x200003b0                newBytes
+ .bss.countTx   0x200003b4        0x4 build/./libmaple/usb/usb_callbacks.o
+                0x200003b4                countTx
+ .bss.recvBufIn
+                0x200003b8        0x4 build/./libmaple/usb/usb_callbacks.o
+                0x200003b8                recvBufIn
+ .bss.Data_Mul_MaxPacketSize
+                0x200003bc        0x1 build/./libmaple/usb/usb_lib/usb_core.o
+                0x200003bc                Data_Mul_MaxPacketSize
+ *fill*         0x200003bd        0x3 00
+ .bss.stdout_putf
+                0x200003c0        0x4 build/./framework/tprintf/tprintf.o
+ .bss.stdout_putp
+                0x200003c4        0x4 build/./framework/tprintf/tprintf.o
+ *(COMMON)
+ COMMON         0x200003c8        0x4 build/./libmaple/systick.o
+                0x200003c8                systick_uptime_millis
+ COMMON         0x200003cc        0x2 build/./libmaple/usb/usb.o
+                0x200003cc                ResumeS
+ COMMON         0x200003ce       0xc0 build/./libmaple/usb/usb_callbacks.o
+                0x200003ce                vcomBufferRx
+ COMMON         0x2000048e        0x2 build/./libmaple/usb/usb_lib/usb_core.o
+                0x2000048e                StatusInfo
+ COMMON         0x20000490       0x32 build/./libmaple/usb/usb_lib/usb_init.o
+                0x20000490                SaveState
+                0x20000494                pProperty
+                0x20000498                EPindex
+                0x2000049c                Device_Info
+                0x200004b8                pUser_Standard_Requests
+                0x200004bc                pInformation
+                0x200004c0                wInterrupt_Mask
+ COMMON         0x200004c2        0x4 build/./libmaple/usb/usb_lib/usb_int.o
+                0x200004c2                SaveRState
+                0x200004c4                SaveTState
+ *(.ram.b)
+                0x200004c8                . = ALIGN (0x8)
+ *fill*         0x200004c6        0x2 00
+                0x200004c8                _end = .
+                0x200004c8                __end = .
+                0x20005000                __cs3_region_end_ram = (__cs3_region_start_ram + 0x5000)
+                0x00005000                __cs3_region_size_ram = 0x5000
+                0x080026b8                __cs3_region_init_ram = LOADADDR (.data)
+                0x00000370                __cs3_region_init_size_ram = (_edata - ADDR (.data))
+                0x00000158                __cs3_region_zero_size_ram = (_end - _edata)
+                0x00000001                __cs3_region_num = 0x1
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.comment        0x00000000       0x2a
+ .comment       0x00000000       0x2a build/./libmaple/adc.o
+                                 0x2b (size before relaxing)
+ .comment       0x00000000       0x2b build/./libmaple/bkp.o
+ .comment       0x00000000       0x2b build/./libmaple/dac.o
+ .comment       0x00000000       0x2b build/./libmaple/dma.o
+ .comment       0x00000000       0x2b build/./libmaple/exti.o
+ .comment       0x00000000       0x2b build/./libmaple/flash.o
+ .comment       0x00000000       0x2b build/./libmaple/fsmc.o
+ .comment       0x00000000       0x2b build/./libmaple/gpio.o
+ .comment       0x00000000       0x2b build/./libmaple/iwdg.o
+ .comment       0x00000000       0x2b build/./libmaple/nvic.o
+ .comment       0x00000000       0x2b build/./libmaple/pwr.o
+ .comment       0x00000000       0x2b build/./libmaple/i2c.o
+ .comment       0x00000000       0x2b build/./libmaple/rcc.o
+ .comment       0x00000000       0x2b build/./libmaple/spi.o
+ .comment       0x00000000       0x2b build/./libmaple/syscalls.o
+ .comment       0x00000000       0x2b build/./libmaple/systick.o
+ .comment       0x00000000       0x2b build/./libmaple/timer.o
+ .comment       0x00000000       0x2b build/./libmaple/usart.o
+ .comment       0x00000000       0x2b build/./libmaple/util.o
+ .comment       0x00000000       0x2b build/./libmaple/usb/descriptors.o
+ .comment       0x00000000       0x2b build/./libmaple/usb/usb.o
+ .comment       0x00000000       0x2b build/./libmaple/usb/usb_callbacks.o
+ .comment       0x00000000       0x2b build/./libmaple/usb/usb_hardware.o
+ .comment       0x00000000       0x2b build/./libmaple/usb/usb_lib/usb_core.o
+ .comment       0x00000000       0x2b build/./libmaple/usb/usb_lib/usb_init.o
+ .comment       0x00000000       0x2b build/./libmaple/usb/usb_lib/usb_int.o
+ .comment       0x00000000       0x2b build/./libmaple/usb/usb_lib/usb_mem.o
+ .comment       0x00000000       0x2b build/./libmaple/usb/usb_lib/usb_regs.o
+ .comment       0x00000000       0x2b build/./app/ss/SerialShell.o
+ .comment       0x00000000       0x2b build/./framework/boards/platform_config.o
+ .comment       0x00000000       0x2b build/./framework/system_init.o
+ .comment       0x00000000       0x2b build/./framework/libc_retarget.o
+ .comment       0x00000000       0x2b build/./framework/tprintf/tprintf.o
+ .comment       0x00000000       0x2b build/./framework/misc.o
+ .comment       0x00000000       0x2b build/main.o
+ .comment       0x00000000       0x2b ./support/ld/libcs3_stm32_med_density.a(start_c.o)
+
+.debug_aranges  0x00000000      0xc50
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x50 build/./libmaple/adc.o
+ .debug_aranges
+                0x00000050       0x50 build/./libmaple/bkp.o
+ .debug_aranges
+                0x000000a0       0xd0 build/./libmaple/dma.o
+ .debug_aranges
+                0x00000170       0x90 build/./libmaple/exti.o
+ .debug_aranges
+                0x00000200       0x28 build/./libmaple/flash.o
+ .debug_aranges
+                0x00000228       0x48 build/./libmaple/gpio.o
+ .debug_aranges
+                0x00000270       0x28 build/./libmaple/iwdg.o
+ .debug_aranges
+                0x00000298       0x30 build/./libmaple/nvic.o
+ .debug_aranges
+                0x000002c8       0x20 build/./libmaple/pwr.o
+ .debug_aranges
+                0x000002e8       0xc0 build/./libmaple/i2c.o
+ .debug_aranges
+                0x000003a8       0x48 build/./libmaple/rcc.o
+ .debug_aranges
+                0x000003f0       0x88 build/./libmaple/spi.o
+ .debug_aranges
+                0x00000478       0x80 build/./libmaple/syscalls.o
+ .debug_aranges
+                0x000004f8       0x38 build/./libmaple/systick.o
+ .debug_aranges
+                0x00000530       0xc0 build/./libmaple/timer.o
+ .debug_aranges
+                0x000005f0       0x70 build/./libmaple/usart.o
+ .debug_aranges
+                0x00000660       0x58 build/./libmaple/util.o
+ .debug_aranges
+                0x000006b8       0xc8 build/./libmaple/usb/usb.o
+ .debug_aranges
+                0x00000780       0xa0 build/./libmaple/usb/usb_callbacks.o
+ .debug_aranges
+                0x00000820       0x30 build/./libmaple/usb/usb_hardware.o
+ .debug_aranges
+                0x00000850       0x98 build/./libmaple/usb/usb_lib/usb_core.o
+ .debug_aranges
+                0x000008e8       0x20 build/./libmaple/usb/usb_lib/usb_init.o
+ .debug_aranges
+                0x00000908       0x28 build/./libmaple/usb/usb_lib/usb_int.o
+ .debug_aranges
+                0x00000930       0x28 build/./libmaple/usb/usb_lib/usb_mem.o
+ .debug_aranges
+                0x00000958      0x1f0 build/./libmaple/usb/usb_lib/usb_regs.o
+ .debug_aranges
+                0x00000b48       0x20 build/./app/ss/SerialShell.o
+ .debug_aranges
+                0x00000b68       0x48 build/./framework/system_init.o
+ .debug_aranges
+                0x00000bb0       0x50 build/./framework/tprintf/tprintf.o
+ .debug_aranges
+                0x00000c00       0x28 build/./framework/misc.o
+ .debug_aranges
+                0x00000c28       0x28 build/main.o
+
+.debug_pubnames
+                0x00000000     0x17ae
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x8b build/./libmaple/adc.o
+ .debug_pubnames
+                0x0000008b       0x77 build/./libmaple/bkp.o
+ .debug_pubnames
+                0x00000102      0x1a0 build/./libmaple/dma.o
+ .debug_pubnames
+                0x000002a2       0xbc build/./libmaple/exti.o
+ .debug_pubnames
+                0x0000035e       0x42 build/./libmaple/flash.o
+ .debug_pubnames
+                0x000003a0       0xc6 build/./libmaple/gpio.o
+ .debug_pubnames
+                0x00000466       0x2e build/./libmaple/iwdg.o
+ .debug_pubnames
+                0x00000494       0x54 build/./libmaple/nvic.o
+ .debug_pubnames
+                0x000004e8       0x1f build/./libmaple/pwr.o
+ .debug_pubnames
+                0x00000507       0xb5 build/./libmaple/i2c.o
+ .debug_pubnames
+                0x000005bc       0x6e build/./libmaple/rcc.o
+ .debug_pubnames
+                0x0000062a      0x117 build/./libmaple/spi.o
+ .debug_pubnames
+                0x00000741       0x9b build/./libmaple/syscalls.o
+ .debug_pubnames
+                0x000007dc       0x76 build/./libmaple/systick.o
+ .debug_pubnames
+                0x00000852      0x135 build/./libmaple/timer.o
+ .debug_pubnames
+                0x00000987       0xe1 build/./libmaple/usart.o
+ .debug_pubnames
+                0x00000a68       0x32 build/./libmaple/util.o
+ .debug_pubnames
+                0x00000a9a       0xac build/./libmaple/usb/descriptors.o
+ .debug_pubnames
+                0x00000b46      0x20f build/./libmaple/usb/usb.o
+ .debug_pubnames
+                0x00000d55      0x24c build/./libmaple/usb/usb_callbacks.o
+ .debug_pubnames
+                0x00000fa1       0x4d build/./libmaple/usb/usb_hardware.o
+ .debug_pubnames
+                0x00000fee      0x1a5 build/./libmaple/usb/usb_lib/usb_core.o
+ .debug_pubnames
+                0x00001193       0x98 build/./libmaple/usb/usb_lib/usb_init.o
+ .debug_pubnames
+                0x0000122b       0x46 build/./libmaple/usb/usb_lib/usb_int.o
+ .debug_pubnames
+                0x00001271       0x42 build/./libmaple/usb/usb_lib/usb_mem.o
+ .debug_pubnames
+                0x000012b3      0x419 build/./libmaple/usb/usb_lib/usb_regs.o
+ .debug_pubnames
+                0x000016cc       0x23 build/./app/ss/SerialShell.o
+ .debug_pubnames
+                0x000016ef       0x22 build/./framework/system_init.o
+ .debug_pubnames
+                0x00001711       0x50 build/./framework/tprintf/tprintf.o
+ .debug_pubnames
+                0x00001761       0x32 build/./framework/misc.o
+ .debug_pubnames
+                0x00001793       0x1b build/main.o
+
+.debug_info     0x00000000     0xe681
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x660 build/./libmaple/adc.o
+ .debug_info    0x00000660      0x422 build/./libmaple/bkp.o
+ .debug_info    0x00000a82       0x62 build/./libmaple/dac.o
+ .debug_info    0x00000ae4      0xee8 build/./libmaple/dma.o
+ .debug_info    0x000019cc      0x85f build/./libmaple/exti.o
+ .debug_info    0x0000222b      0x1a8 build/./libmaple/flash.o
+ .debug_info    0x000023d3       0x62 build/./libmaple/fsmc.o
+ .debug_info    0x00002435      0x685 build/./libmaple/gpio.o
+ .debug_info    0x00002aba      0x14c build/./libmaple/iwdg.o
+ .debug_info    0x00002c06      0x53e build/./libmaple/nvic.o
+ .debug_info    0x00003144      0x11f build/./libmaple/pwr.o
+ .debug_info    0x00003263      0xf29 build/./libmaple/i2c.o
+ .debug_info    0x0000418c      0x675 build/./libmaple/rcc.o
+ .debug_info    0x00004801      0xabf build/./libmaple/spi.o
+ .debug_info    0x000052c0      0x55f build/./libmaple/syscalls.o
+ .debug_info    0x0000581f      0x13c build/./libmaple/systick.o
+ .debug_info    0x0000595b     0x123b build/./libmaple/timer.o
+ .debug_info    0x00006b96      0xb13 build/./libmaple/usart.o
+ .debug_info    0x000076a9      0xb77 build/./libmaple/util.o
+ .debug_info    0x00008220      0x615 build/./libmaple/usb/descriptors.o
+ .debug_info    0x00008835      0xcf0 build/./libmaple/usb/usb.o
+ .debug_info    0x00009525      0xf2d build/./libmaple/usb/usb_callbacks.o
+ .debug_info    0x0000a452      0x401 build/./libmaple/usb/usb_hardware.o
+ .debug_info    0x0000a853      0xcac build/./libmaple/usb/usb_lib/usb_core.o
+ .debug_info    0x0000b4ff      0x4a6 build/./libmaple/usb/usb_lib/usb_init.o
+ .debug_info    0x0000b9a5      0x202 build/./libmaple/usb/usb_lib/usb_int.o
+ .debug_info    0x0000bba7      0x186 build/./libmaple/usb/usb_lib/usb_mem.o
+ .debug_info    0x0000bd2d      0xd15 build/./libmaple/usb/usb_lib/usb_regs.o
+ .debug_info    0x0000ca42       0x7a build/./app/ss/SerialShell.o
+ .debug_info    0x0000cabc       0x29 build/./framework/boards/platform_config.o
+ .debug_info    0x0000cae5     0x133d build/./framework/system_init.o
+ .debug_info    0x0000de22       0x29 build/./framework/libc_retarget.o
+ .debug_info    0x0000de4b      0x482 build/./framework/tprintf/tprintf.o
+ .debug_info    0x0000e2cd       0xfa build/./framework/misc.o
+ .debug_info    0x0000e3c7      0x2ba build/main.o
+
+.debug_abbrev   0x00000000     0x389f
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x268 build/./libmaple/adc.o
+ .debug_abbrev  0x00000268      0x186 build/./libmaple/bkp.o
+ .debug_abbrev  0x000003ee       0x2c build/./libmaple/dac.o
+ .debug_abbrev  0x0000041a      0x379 build/./libmaple/dma.o
+ .debug_abbrev  0x00000793      0x242 build/./libmaple/exti.o
+ .debug_abbrev  0x000009d5       0xf2 build/./libmaple/flash.o
+ .debug_abbrev  0x00000ac7       0x2c build/./libmaple/fsmc.o
+ .debug_abbrev  0x00000af3      0x18a build/./libmaple/gpio.o
+ .debug_abbrev  0x00000c7d       0xb1 build/./libmaple/iwdg.o
+ .debug_abbrev  0x00000d2e      0x10a build/./libmaple/nvic.o
+ .debug_abbrev  0x00000e38       0x5b build/./libmaple/pwr.o
+ .debug_abbrev  0x00000e93      0x3db build/./libmaple/i2c.o
+ .debug_abbrev  0x0000126e      0x1be build/./libmaple/rcc.o
+ .debug_abbrev  0x0000142c      0x29f build/./libmaple/spi.o
+ .debug_abbrev  0x000016cb      0x1a2 build/./libmaple/syscalls.o
+ .debug_abbrev  0x0000186d       0xd0 build/./libmaple/systick.o
+ .debug_abbrev  0x0000193d      0x3c6 build/./libmaple/timer.o
+ .debug_abbrev  0x00001d03      0x2f0 build/./libmaple/usart.o
+ .debug_abbrev  0x00001ff3      0x2cb build/./libmaple/util.o
+ .debug_abbrev  0x000022be       0x7f build/./libmaple/usb/descriptors.o
+ .debug_abbrev  0x0000233d      0x2f7 build/./libmaple/usb/usb.o
+ .debug_abbrev  0x00002634      0x254 build/./libmaple/usb/usb_callbacks.o
+ .debug_abbrev  0x00002888      0x12f build/./libmaple/usb/usb_hardware.o
+ .debug_abbrev  0x000029b7      0x2e4 build/./libmaple/usb/usb_lib/usb_core.o
+ .debug_abbrev  0x00002c9b      0x104 build/./libmaple/usb/usb_lib/usb_init.o
+ .debug_abbrev  0x00002d9f       0xcf build/./libmaple/usb/usb_lib/usb_int.o
+ .debug_abbrev  0x00002e6e       0xa8 build/./libmaple/usb/usb_lib/usb_mem.o
+ .debug_abbrev  0x00002f16      0x1c9 build/./libmaple/usb/usb_lib/usb_regs.o
+ .debug_abbrev  0x000030df       0x43 build/./app/ss/SerialShell.o
+ .debug_abbrev  0x00003122       0x16 build/./framework/boards/platform_config.o
+ .debug_abbrev  0x00003138      0x367 build/./framework/system_init.o
+ .debug_abbrev  0x0000349f       0x16 build/./framework/libc_retarget.o
+ .debug_abbrev  0x000034b5      0x1ff build/./framework/tprintf/tprintf.o
+ .debug_abbrev  0x000036b4       0xbb build/./framework/misc.o
+ .debug_abbrev  0x0000376f      0x130 build/main.o
+
+.debug_line     0x00000000     0x3f34
+ *(.debug_line)
+ .debug_line    0x00000000      0x14e build/./libmaple/adc.o
+ .debug_line    0x0000014e      0x13b build/./libmaple/bkp.o
+ .debug_line    0x00000289       0x8d build/./libmaple/dac.o
+ .debug_line    0x00000316      0x292 build/./libmaple/dma.o
+ .debug_line    0x000005a8      0x229 build/./libmaple/exti.o
+ .debug_line    0x000007d1       0xb0 build/./libmaple/flash.o
+ .debug_line    0x00000881       0x8f build/./libmaple/fsmc.o
+ .debug_line    0x00000910      0x117 build/./libmaple/gpio.o
+ .debug_line    0x00000a27       0x7f build/./libmaple/iwdg.o
+ .debug_line    0x00000aa6       0xb8 build/./libmaple/nvic.o
+ .debug_line    0x00000b5e       0x98 build/./libmaple/pwr.o
+ .debug_line    0x00000bf6      0x637 build/./libmaple/i2c.o
+ .debug_line    0x0000122d      0x140 build/./libmaple/rcc.o
+ .debug_line    0x0000136d      0x219 build/./libmaple/spi.o
+ .debug_line    0x00001586      0x3fe build/./libmaple/syscalls.o
+ .debug_line    0x00001984       0xa4 build/./libmaple/systick.o
+ .debug_line    0x00001a28      0x300 build/./libmaple/timer.o
+ .debug_line    0x00001d28      0x1fa build/./libmaple/usart.o
+ .debug_line    0x00001f22      0x1da build/./libmaple/util.o
+ .debug_line    0x000020fc      0x13f build/./libmaple/usb/descriptors.o
+ .debug_line    0x0000223b      0x3a3 build/./libmaple/usb/usb.o
+ .debug_line    0x000025de      0x30e build/./libmaple/usb/usb_callbacks.o
+ .debug_line    0x000028ec       0xfa build/./libmaple/usb/usb_hardware.o
+ .debug_line    0x000029e6      0x376 build/./libmaple/usb/usb_lib/usb_core.o
+ .debug_line    0x00002d5c       0xc5 build/./libmaple/usb/usb_lib/usb_init.o
+ .debug_line    0x00002e21      0x13f build/./libmaple/usb/usb_lib/usb_int.o
+ .debug_line    0x00002f60      0x109 build/./libmaple/usb/usb_lib/usb_mem.o
+ .debug_line    0x00003069      0x5d9 build/./libmaple/usb/usb_lib/usb_regs.o
+ .debug_line    0x00003642       0xac build/./app/ss/SerialShell.o
+ .debug_line    0x000036ee       0x5a build/./framework/boards/platform_config.o
+ .debug_line    0x00003748      0x358 build/./framework/system_init.o
+ .debug_line    0x00003aa0       0x4f build/./framework/libc_retarget.o
+ .debug_line    0x00003aef      0x1e7 build/./framework/tprintf/tprintf.o
+ .debug_line    0x00003cd6       0xa3 build/./framework/misc.o
+ .debug_line    0x00003d79      0x1bb build/main.o
+
+.debug_frame    0x00000000     0x1a70
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xa8 build/./libmaple/adc.o
+ .debug_frame   0x000000a8       0xa8 build/./libmaple/bkp.o
+ .debug_frame   0x00000150      0x204 build/./libmaple/dma.o
+ .debug_frame   0x00000354      0x174 build/./libmaple/exti.o
+ .debug_frame   0x000004c8       0x30 build/./libmaple/flash.o
+ .debug_frame   0x000004f8       0xa0 build/./libmaple/gpio.o
+ .debug_frame   0x00000598       0x30 build/./libmaple/iwdg.o
+ .debug_frame   0x000005c8       0x48 build/./libmaple/nvic.o
+ .debug_frame   0x00000610       0x28 build/./libmaple/pwr.o
+ .debug_frame   0x00000638      0x1a4 build/./libmaple/i2c.o
+ .debug_frame   0x000007dc       0x98 build/./libmaple/rcc.o
+ .debug_frame   0x00000874      0x128 build/./libmaple/spi.o
+ .debug_frame   0x0000099c       0xf4 build/./libmaple/syscalls.o
+ .debug_frame   0x00000a90       0x50 build/./libmaple/systick.o
+ .debug_frame   0x00000ae0      0x1e0 build/./libmaple/timer.o
+ .debug_frame   0x00000cc0       0xf8 build/./libmaple/usart.o
+ .debug_frame   0x00000db8       0xd0 build/./libmaple/util.o
+ .debug_frame   0x00000e88      0x1d8 build/./libmaple/usb/usb.o
+ .debug_frame   0x00001060      0x150 build/./libmaple/usb/usb_callbacks.o
+ .debug_frame   0x000011b0       0x4c build/./libmaple/usb/usb_hardware.o
+ .debug_frame   0x000011fc      0x1a8 build/./libmaple/usb/usb_lib/usb_core.o
+ .debug_frame   0x000013a4       0x28 build/./libmaple/usb/usb_lib/usb_init.o
+ .debug_frame   0x000013cc       0x44 build/./libmaple/usb/usb_lib/usb_int.o
+ .debug_frame   0x00001410       0x38 build/./libmaple/usb/usb_lib/usb_mem.o
+ .debug_frame   0x00001448      0x3e0 build/./libmaple/usb/usb_lib/usb_regs.o
+ .debug_frame   0x00001828       0x20 build/./app/ss/SerialShell.o
+ .debug_frame   0x00001848       0xa4 build/./framework/system_init.o
+ .debug_frame   0x000018ec       0xe4 build/./framework/tprintf/tprintf.o
+ .debug_frame   0x000019d0       0x3c build/./framework/misc.o
+ .debug_frame   0x00001a0c       0x38 build/main.o
+ .debug_frame   0x00001a44       0x2c /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+
+.debug_str      0x00000000     0x4171
+ *(.debug_str)
+ .debug_str     0x00000000      0x3f4 build/./libmaple/adc.o
+                                0x44a (size before relaxing)
+ .debug_str     0x000003f4       0x93 build/./libmaple/bkp.o
+                                0x275 (size before relaxing)
+ .debug_str     0x00000487        0xf build/./libmaple/dac.o
+                                 0xb2 (size before relaxing)
+ .debug_str     0x00000496      0x783 build/./libmaple/dma.o
+                                0xa10 (size before relaxing)
+ .debug_str     0x00000c19      0x290 build/./libmaple/exti.o
+                                0x72a (size before relaxing)
+ .debug_str     0x00000ea9       0x60 build/./libmaple/flash.o
+                                0x139 (size before relaxing)
+ .debug_str     0x00000f09       0x10 build/./libmaple/fsmc.o
+                                 0xb3 (size before relaxing)
+ .debug_str     0x00000f19      0x36f build/./libmaple/gpio.o
+                                0x670 (size before relaxing)
+ .debug_str     0x00001288       0x94 build/./libmaple/iwdg.o
+                                0x156 (size before relaxing)
+ .debug_str     0x0000131c       0xb8 build/./libmaple/nvic.o
+                                0x4cf (size before relaxing)
+ .debug_str     0x000013d4       0x18 build/./libmaple/pwr.o
+                                0x1b7 (size before relaxing)
+ .debug_str     0x000013ec      0x2df build/./libmaple/i2c.o
+                                0xb66 (size before relaxing)
+ .debug_str     0x000016cb      0x2ce build/./libmaple/rcc.o
+                                0x4e6 (size before relaxing)
+ .debug_str     0x00001999      0x36e build/./libmaple/spi.o
+                                0x97b (size before relaxing)
+ .debug_str     0x00001d07      0x15d build/./libmaple/syscalls.o
+                                0x25c (size before relaxing)
+ .debug_str     0x00001e64       0x68 build/./libmaple/systick.o
+                                0x128 (size before relaxing)
+ .debug_str     0x00001ecc      0x4e8 build/./libmaple/timer.o
+                                0xae1 (size before relaxing)
+ .debug_str     0x000023b4      0x193 build/./libmaple/usart.o
+                                0x706 (size before relaxing)
+ .debug_str     0x00002547       0xaf build/./libmaple/util.o
+                                0x7ec (size before relaxing)
+ .debug_str     0x000025f6      0x448 build/./libmaple/usb/descriptors.o
+                                0x5c6 (size before relaxing)
+ .debug_str     0x00002a3e      0x525 build/./libmaple/usb/usb.o
+                                0x911 (size before relaxing)
+ .debug_str     0x00002f63      0x3d8 build/./libmaple/usb/usb_callbacks.o
+                                0xba6 (size before relaxing)
+ .debug_str     0x0000333b       0xb2 build/./libmaple/usb/usb_hardware.o
+                                0x27a (size before relaxing)
+ .debug_str     0x000033ed      0x40e build/./libmaple/usb/usb_lib/usb_core.o
+                                0x962 (size before relaxing)
+ .debug_str     0x000037fb       0x47 build/./libmaple/usb/usb_lib/usb_init.o
+                                0x44d (size before relaxing)
+ .debug_str     0x00003842       0x34 build/./libmaple/usb/usb_lib/usb_int.o
+                                0x10f (size before relaxing)
+ .debug_str     0x00003876       0x77 build/./libmaple/usb/usb_lib/usb_mem.o
+                                0x103 (size before relaxing)
+ .debug_str     0x000038ed      0x3ea build/./libmaple/usb/usb_lib/usb_regs.o
+                                0x48b (size before relaxing)
+ .debug_str     0x00003cd7       0x22 build/./app/ss/SerialShell.o
+                                 0xc5 (size before relaxing)
+ .debug_str     0x00003cf9       0x25 build/./framework/boards/platform_config.o
+                                 0x5f (size before relaxing)
+ .debug_str     0x00003d1e      0x352 build/./framework/system_init.o
+                                0xf55 (size before relaxing)
+ .debug_str     0x00004070       0x1c build/./framework/libc_retarget.o
+                                 0x56 (size before relaxing)
+ .debug_str     0x0000408c       0x9f build/./framework/tprintf/tprintf.o
+                                0x10e (size before relaxing)
+ .debug_str     0x0000412b       0x2b build/./framework/misc.o
+                                 0xde (size before relaxing)
+ .debug_str     0x00004156       0x1b build/main.o
+                                0x251 (size before relaxing)
+
+.debug_loc      0x00000000     0x4686
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x204 build/./libmaple/adc.o
+ .debug_loc     0x00000204      0x133 build/./libmaple/bkp.o
+ .debug_loc     0x00000337      0x57c build/./libmaple/dma.o
+ .debug_loc     0x000008b3      0x30c build/./libmaple/exti.o
+ .debug_loc     0x00000bbf       0x29 build/./libmaple/flash.o
+ .debug_loc     0x00000be8      0x1e0 build/./libmaple/gpio.o
+ .debug_loc     0x00000dc8       0x26 build/./libmaple/iwdg.o
+ .debug_loc     0x00000dee       0x9e build/./libmaple/nvic.o
+ .debug_loc     0x00000e8c       0x20 build/./libmaple/pwr.o
+ .debug_loc     0x00000eac      0x3e7 build/./libmaple/i2c.o
+ .debug_loc     0x00001293      0x24c build/./libmaple/rcc.o
+ .debug_loc     0x000014df      0x270 build/./libmaple/spi.o
+ .debug_loc     0x0000174f      0x18b build/./libmaple/syscalls.o
+ .debug_loc     0x000018da       0x13 build/./libmaple/systick.o
+ .debug_loc     0x000018ed      0x605 build/./libmaple/timer.o
+ .debug_loc     0x00001ef2      0x33b build/./libmaple/usart.o
+ .debug_loc     0x0000222d      0x223 build/./libmaple/util.o
+ .debug_loc     0x00002450      0x2c4 build/./libmaple/usb/usb.o
+ .debug_loc     0x00002714      0x23a build/./libmaple/usb/usb_callbacks.o
+ .debug_loc     0x0000294e      0x13e build/./libmaple/usb/usb_hardware.o
+ .debug_loc     0x00002a8c      0x93c build/./libmaple/usb/usb_lib/usb_core.o
+ .debug_loc     0x000033c8       0x20 build/./libmaple/usb/usb_lib/usb_init.o
+ .debug_loc     0x000033e8      0x1df build/./libmaple/usb/usb_lib/usb_int.o
+ .debug_loc     0x000035c7      0x169 build/./libmaple/usb/usb_lib/usb_mem.o
+ .debug_loc     0x00003730      0x6f0 build/./libmaple/usb/usb_lib/usb_regs.o
+ .debug_loc     0x00003e20      0x27c build/./framework/system_init.o
+ .debug_loc     0x0000409c      0x524 build/./framework/tprintf/tprintf.o
+ .debug_loc     0x000045c0       0xa6 build/./framework/misc.o
+ .debug_loc     0x00004666       0x20 build/main.o
+
+.debug_macinfo  0x00000000    0xc0030
+ *(.debug_macinfo)
+ .debug_macinfo
+                0x00000000     0x5bf1 build/./libmaple/adc.o
+ .debug_macinfo
+                0x00005bf1     0x52dd build/./libmaple/bkp.o
+ .debug_macinfo
+                0x0000aece     0x6693 build/./libmaple/dac.o
+ .debug_macinfo
+                0x00011561     0x610f build/./libmaple/dma.o
+ .debug_macinfo
+                0x00017670     0x63cb build/./libmaple/exti.o
+ .debug_macinfo
+                0x0001da3b     0x2c53 build/./libmaple/flash.o
+ .debug_macinfo
+                0x0002068e     0x62e0 build/./libmaple/fsmc.o
+ .debug_macinfo
+                0x0002696e     0x62ee build/./libmaple/gpio.o
+ .debug_macinfo
+                0x0002cc5c     0x25da build/./libmaple/iwdg.o
+ .debug_macinfo
+                0x0002f236     0x2518 build/./libmaple/nvic.o
+ .debug_macinfo
+                0x0003174e     0x4f8e build/./libmaple/pwr.o
+ .debug_macinfo
+                0x000366dc     0x8821 build/./libmaple/i2c.o
+ .debug_macinfo
+                0x0003eefd     0x5609 build/./libmaple/rcc.o
+ .debug_macinfo
+                0x00044506     0x731c build/./libmaple/spi.o
+ .debug_macinfo
+                0x0004b822     0x4e24 build/./libmaple/syscalls.o
+ .debug_macinfo
+                0x00050646     0x2638 build/./libmaple/systick.o
+ .debug_macinfo
+                0x00052c7e     0x75f2 build/./libmaple/timer.o
+ .debug_macinfo
+                0x0005a270     0x5d78 build/./libmaple/usart.o
+ .debug_macinfo
+                0x0005ffe8     0xa677 build/./libmaple/util.o
+ .debug_macinfo
+                0x0006a65f     0x870e build/./libmaple/usb/descriptors.o
+ .debug_macinfo
+                0x00072d6d     0x884b build/./libmaple/usb/usb.o
+ .debug_macinfo
+                0x0007b5b8     0x8b16 build/./libmaple/usb/usb_callbacks.o
+ .debug_macinfo
+                0x000840ce     0x4f8e build/./libmaple/usb/usb_hardware.o
+ .debug_macinfo
+                0x0008905c     0x425e build/./libmaple/usb/usb_lib/usb_core.o
+ .debug_macinfo
+                0x0008d2ba     0x40ac build/./libmaple/usb/usb_lib/usb_init.o
+ .debug_macinfo
+                0x00091366     0x40ac build/./libmaple/usb/usb_lib/usb_int.o
+ .debug_macinfo
+                0x00095412     0x40ac build/./libmaple/usb/usb_lib/usb_mem.o
+ .debug_macinfo
+                0x000994be     0x40ac build/./libmaple/usb/usb_lib/usb_regs.o
+ .debug_macinfo
+                0x0009d56a     0x5d8f build/./app/ss/SerialShell.o
+ .debug_macinfo
+                0x000a32f9     0x2270 build/./framework/boards/platform_config.o
+ .debug_macinfo
+                0x000a5569     0xcd5b build/./framework/system_init.o
+ .debug_macinfo
+                0x000b22c4     0x225e build/./framework/libc_retarget.o
+ .debug_macinfo
+                0x000b4522     0x23d4 build/./framework/tprintf/tprintf.o
+ .debug_macinfo
+                0x000b68f6     0x22d5 build/./framework/misc.o
+ .debug_macinfo
+                0x000b8bcb     0x7465 build/main.o
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x27
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x19 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crti.o
+ .ARM.attributes
+                0x00000019       0x29 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtbegin.o
+ .ARM.attributes
+                0x00000042       0x31 build/./libmaple/adc.o
+ .ARM.attributes
+                0x00000073       0x31 build/./libmaple/bkp.o
+ .ARM.attributes
+                0x000000a4       0x31 build/./libmaple/dac.o
+ .ARM.attributes
+                0x000000d5       0x31 build/./libmaple/dma.o
+ .ARM.attributes
+                0x00000106       0x31 build/./libmaple/exti.o
+ .ARM.attributes
+                0x00000137       0x31 build/./libmaple/flash.o
+ .ARM.attributes
+                0x00000168       0x31 build/./libmaple/fsmc.o
+ .ARM.attributes
+                0x00000199       0x31 build/./libmaple/gpio.o
+ .ARM.attributes
+                0x000001ca       0x31 build/./libmaple/iwdg.o
+ .ARM.attributes
+                0x000001fb       0x31 build/./libmaple/nvic.o
+ .ARM.attributes
+                0x0000022c       0x31 build/./libmaple/pwr.o
+ .ARM.attributes
+                0x0000025d       0x31 build/./libmaple/i2c.o
+ .ARM.attributes
+                0x0000028e       0x31 build/./libmaple/rcc.o
+ .ARM.attributes
+                0x000002bf       0x31 build/./libmaple/spi.o
+ .ARM.attributes
+                0x000002f0       0x31 build/./libmaple/syscalls.o
+ .ARM.attributes
+                0x00000321       0x31 build/./libmaple/systick.o
+ .ARM.attributes
+                0x00000352       0x31 build/./libmaple/timer.o
+ .ARM.attributes
+                0x00000383       0x31 build/./libmaple/usart.o
+ .ARM.attributes
+                0x000003b4       0x31 build/./libmaple/util.o
+ .ARM.attributes
+                0x000003e5       0x31 build/./libmaple/usb/descriptors.o
+ .ARM.attributes
+                0x00000416       0x31 build/./libmaple/usb/usb.o
+ .ARM.attributes
+                0x00000447       0x31 build/./libmaple/usb/usb_callbacks.o
+ .ARM.attributes
+                0x00000478       0x31 build/./libmaple/usb/usb_hardware.o
+ .ARM.attributes
+                0x000004a9       0x31 build/./libmaple/usb/usb_lib/usb_core.o
+ .ARM.attributes
+                0x000004da       0x31 build/./libmaple/usb/usb_lib/usb_init.o
+ .ARM.attributes
+                0x0000050b       0x31 build/./libmaple/usb/usb_lib/usb_int.o
+ .ARM.attributes
+                0x0000053c       0x31 build/./libmaple/usb/usb_lib/usb_mem.o
+ .ARM.attributes
+                0x0000056d       0x31 build/./libmaple/usb/usb_lib/usb_regs.o
+ .ARM.attributes
+                0x0000059e       0x1b build/./libmaple/exc.o
+ .ARM.attributes
+                0x000005b9       0x31 build/./app/ss/SerialShell.o
+ .ARM.attributes
+                0x000005ea       0x31 build/./framework/boards/platform_config.o
+ .ARM.attributes
+                0x0000061b       0x31 build/./framework/system_init.o
+ .ARM.attributes
+                0x0000064c       0x31 build/./framework/libc_retarget.o
+ .ARM.attributes
+                0x0000067d       0x31 build/./framework/tprintf/tprintf.o
+ .ARM.attributes
+                0x000006ae       0x31 build/./framework/misc.o
+ .ARM.attributes
+                0x000006df       0x31 build/main.o
+ .ARM.attributes
+                0x00000710       0x29 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtend.o
+ .ARM.attributes
+                0x00000739       0x19 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/thumb2/crtn.o
+ .ARM.attributes
+                0x00000752       0x16 ./support/ld/libcs3_stm32_med_density.a(stm32_vector_table.o)
+ .ARM.attributes
+                0x00000768       0x16 ./support/ld/libcs3_stm32_med_density.a(stm32_isrs.o)
+ .ARM.attributes
+                0x0000077e       0x16 ./support/ld/libcs3_stm32_med_density.a(start.o)
+ .ARM.attributes
+                0x00000794       0x31 ./support/ld/libcs3_stm32_med_density.a(start_c.o)
+ .ARM.attributes
+                0x000007c5       0x29 /home/librae/tool/CodeSourcery/Sourcery_G++_Lite/bin/../lib/gcc/arm-none-eabi/4.5.2/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-init.o)
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(build/maple.elf elf32-littlearm)
+
+.debug_pubtypes
+                0x00000000     0x1b45
+ .debug_pubtypes
+                0x00000000       0xc3 build/./libmaple/adc.o
+ .debug_pubtypes
+                0x000000c3       0x89 build/./libmaple/bkp.o
+ .debug_pubtypes
+                0x0000014c       0x12 build/./libmaple/dac.o
+ .debug_pubtypes
+                0x0000015e      0x1a3 build/./libmaple/dma.o
+ .debug_pubtypes
+                0x00000301      0x10b build/./libmaple/exti.o
+ .debug_pubtypes
+                0x0000040c       0x2f build/./libmaple/flash.o
+ .debug_pubtypes
+                0x0000043b       0x12 build/./libmaple/fsmc.o
+ .debug_pubtypes
+                0x0000044d      0x121 build/./libmaple/gpio.o
+ .debug_pubtypes
+                0x0000056e       0x5f build/./libmaple/iwdg.o
+ .debug_pubtypes
+                0x000005cd       0x6a build/./libmaple/nvic.o
+ .debug_pubtypes
+                0x00000637       0x21 build/./libmaple/pwr.o
+ .debug_pubtypes
+                0x00000658      0x174 build/./libmaple/i2c.o
+ .debug_pubtypes
+                0x000007cc      0x122 build/./libmaple/rcc.o
+ .debug_pubtypes
+                0x000008ee      0x17d build/./libmaple/spi.o
+ .debug_pubtypes
+                0x00000a6b       0xb5 build/./libmaple/syscalls.o
+ .debug_pubtypes
+                0x00000b20       0x31 build/./libmaple/systick.o
+ .debug_pubtypes
+                0x00000b51      0x1f2 build/./libmaple/timer.o
+ .debug_pubtypes
+                0x00000d43       0xe3 build/./libmaple/usart.o
+ .debug_pubtypes
+                0x00000e26      0x186 build/./libmaple/util.o
+ .debug_pubtypes
+                0x00000fac       0x78 build/./libmaple/usb/descriptors.o
+ .debug_pubtypes
+                0x00001024      0x1a3 build/./libmaple/usb/usb.o
+ .debug_pubtypes
+                0x000011c7      0x194 build/./libmaple/usb/usb_callbacks.o
+ .debug_pubtypes
+                0x0000135b       0x6d build/./libmaple/usb/usb_hardware.o
+ .debug_pubtypes
+                0x000013c8      0x1a2 build/./libmaple/usb/usb_lib/usb_core.o
+ .debug_pubtypes
+                0x0000156a       0xe8 build/./libmaple/usb/usb_lib/usb_init.o
+ .debug_pubtypes
+                0x00001652       0x29 build/./libmaple/usb/usb_lib/usb_int.o
+ .debug_pubtypes
+                0x0000167b       0x29 build/./libmaple/usb/usb_lib/usb_mem.o
+ .debug_pubtypes
+                0x000016a4       0x4a build/./libmaple/usb/usb_lib/usb_regs.o
+ .debug_pubtypes
+                0x000016ee       0x12 build/./app/ss/SerialShell.o
+ .debug_pubtypes
+                0x00001700      0x34b build/./framework/system_init.o
+ .debug_pubtypes
+                0x00001a4b       0x49 build/./framework/tprintf/tprintf.o
+ .debug_pubtypes
+                0x00001a94       0x1d build/./framework/misc.o
+ .debug_pubtypes
+                0x00001ab1       0x94 build/main.o
+
+.debug_ranges   0x00000000      0xe50
+ .debug_ranges  0x00000000       0x40 build/./libmaple/adc.o
+ .debug_ranges  0x00000040       0x40 build/./libmaple/bkp.o
+ .debug_ranges  0x00000080       0xc0 build/./libmaple/dma.o
+ .debug_ranges  0x00000140       0xb0 build/./libmaple/exti.o
+ .debug_ranges  0x000001f0       0x18 build/./libmaple/flash.o
+ .debug_ranges  0x00000208       0x38 build/./libmaple/gpio.o
+ .debug_ranges  0x00000240       0x18 build/./libmaple/iwdg.o
+ .debug_ranges  0x00000258       0x20 build/./libmaple/nvic.o
+ .debug_ranges  0x00000278       0x10 build/./libmaple/pwr.o
+ .debug_ranges  0x00000288      0x110 build/./libmaple/i2c.o
+ .debug_ranges  0x00000398       0x38 build/./libmaple/rcc.o
+ .debug_ranges  0x000003d0       0xc0 build/./libmaple/spi.o
+ .debug_ranges  0x00000490       0x70 build/./libmaple/syscalls.o
+ .debug_ranges  0x00000500       0x28 build/./libmaple/systick.o
+ .debug_ranges  0x00000528      0x1a8 build/./libmaple/timer.o
+ .debug_ranges  0x000006d0      0x100 build/./libmaple/usart.o
+ .debug_ranges  0x000007d0       0x78 build/./libmaple/util.o
+ .debug_ranges  0x00000848       0xd0 build/./libmaple/usb/usb.o
+ .debug_ranges  0x00000918       0x90 build/./libmaple/usb/usb_callbacks.o
+ .debug_ranges  0x000009a8       0x20 build/./libmaple/usb/usb_hardware.o
+ .debug_ranges  0x000009c8       0x88 build/./libmaple/usb/usb_lib/usb_core.o
+ .debug_ranges  0x00000a50       0x10 build/./libmaple/usb/usb_lib/usb_init.o
+ .debug_ranges  0x00000a60       0x30 build/./libmaple/usb/usb_lib/usb_int.o
+ .debug_ranges  0x00000a90       0x18 build/./libmaple/usb/usb_lib/usb_mem.o
+ .debug_ranges  0x00000aa8      0x210 build/./libmaple/usb/usb_lib/usb_regs.o
+ .debug_ranges  0x00000cb8       0x10 build/./app/ss/SerialShell.o
+ .debug_ranges  0x00000cc8      0x118 build/./framework/system_init.o
+ .debug_ranges  0x00000de0       0x40 build/./framework/tprintf/tprintf.o
+ .debug_ranges  0x00000e20       0x18 build/./framework/misc.o
+ .debug_ranges  0x00000e38       0x18 build/main.o

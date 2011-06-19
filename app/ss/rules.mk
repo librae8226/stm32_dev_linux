@@ -3,11 +3,12 @@ sp := $(sp).x
 dirstack_$(sp) := $(d)
 d := $(dir)
 BUILDDIRS += $(BUILD_PATH)/$(d)
+# BUILDDIRS += ... /* here goes on if more sub dirs */
 
-# Local flags
+# Local flags /* here need more INCLUDES if more sub dirs */
 CFLAGS_$(d) := $(LIBMAPLE_INCLUDES)
 
-# Local rules and targets
+# Local rules and targets /* add source files here */
 cSRCS_$(d) := SerialShell.c
 
 cFILES_$(d) := $(cSRCS_$(d):%=$(d)/%)

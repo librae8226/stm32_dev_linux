@@ -73,22 +73,22 @@ APP_PATH := $(SRCROOT)/app
 
 # Compilation flags.
 # FIXME remove the ERROR_LED config
-GLOBAL_FLAGS    := -D$(VECT_BASE_ADDR)					     \
-		   -DBOARD_$(BOARD) -DMCU_$(MCU)			     \
-		   -DERROR_LED_PORT=$(ERROR_LED_PORT)			     \
-		   -DERROR_LED_PIN=$(ERROR_LED_PIN)			     \
+GLOBAL_FLAGS    := -D$(VECT_BASE_ADDR) \
+		   -DBOARD_$(BOARD) -DMCU_$(MCU) \
+		   -DERROR_LED_PORT=$(ERROR_LED_PORT) \
+		   -DERROR_LED_PIN=$(ERROR_LED_PIN) \
 		   -D$(DENSITY) 
 GLOBAL_CFLAGS   := -Os -g3 -gdwarf-2  -mcpu=cortex-m3 -mthumb -march=armv7-m \
-		   -nostdlib -ffunction-sections -fdata-sections	     \
+		   -nostdlib -ffunction-sections -fdata-sections \
 		   -Wl,--gc-sections $(GLOBAL_FLAGS)
 
 #GLOBAL_CXXFLAGS := -fno-rtti -fno-exceptions -Wall $(GLOBAL_FLAGS)
-GLOBAL_ASFLAGS  := -mcpu=cortex-m3 -march=armv7-m -mthumb		     \
+GLOBAL_ASFLAGS  := -mcpu=cortex-m3 -march=armv7-m -mthumb \
 		   -x assembler-with-cpp $(GLOBAL_FLAGS)
 
 LDDIR    := $(SUPPORT_PATH)/ld
-LDFLAGS  = -T$(LDDIR)/$(LDSCRIPT) -L$(LDDIR)    \
-            -mcpu=cortex-m3 -mthumb -Xlinker     \
+LDFLAGS  = -T$(LDDIR)/$(LDSCRIPT) -L$(LDDIR) \
+            -mcpu=cortex-m3 -mthumb -Xlinker \
             --gc-sections --print-gc-sections --march=armv7-m -Wall
 
 # Set up build rules and some useful templates

@@ -1,3 +1,4 @@
+#include "platform_config.h"
 #include "system_init.h"
 
 #include "libmaple.h"
@@ -11,6 +12,7 @@
 #include "adc.h"
 #include "timer.h"
 #include "usb.h"
+#include "usart.h"
 
 #include "misc.h"
 
@@ -21,7 +23,9 @@ static void setupClocks(void);
 static void setupNVIC(void);
 static void setupADC(void);
 static void setupTimers(void);
-static void setupUSART(void);
+static void setupUSART(usart_dev *dev, uint32 baud);
+
+static void _io_putc(void *p, char ch);	/* for printf */
 
 void system_init(void)
 {
@@ -33,8 +37,12 @@ void system_init(void)
 	afio_init();
 	setupADC();
 	setupTimers();
+	setupUSART(USART1, 9600);
+	
+	init_printf(NULL, _io_putc);
 
 	gpio_set_mode(GPIOA, 1, GPIO_OUTPUT_PP);
+	gpio_set_mode(GPIOA, 0, GPIO_OUTPUT_PP);
 }
 
 static void setupFlash(void)
@@ -116,3 +124,20 @@ static void setupTimers(void)
 	timer_foreach(timerDefaultConfig);
 }
 
+static void setupUSART(usart_dev *dev, uint32 baud)
+{
+	/* FIXME: need some preprocess here, according to specific board */
+	if (dev == USART1) {	/* setup responding io */
+		gpio_set_mode(GPIOA, 9, GPIO_AF_OUTPUT_PP);
+		gpio_set_mode(GPIOA, 10, GPIO_INPUT_FLOATING);
+	}
+    usart_init(dev);
+    usart_set_baud_rate(dev, 72000000UL, baud);
+	usart_enable(dev);
+	usart_putc(dev, '\r');
+}
+
+static void _io_putc(void *p, char ch)
+{
+	usart_putc(USARTx, ch);
+}
