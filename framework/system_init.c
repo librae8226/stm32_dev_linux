@@ -37,12 +37,12 @@ void system_init(void)
 	afio_init();
 	setupADC();
 	setupTimers();
-	setupUSART(USART1, 9600);
-	
 	init_printf(NULL, _io_putc);
-
-	gpio_set_mode(GPIOA, 1, GPIO_OUTPUT_PP);
+	setupUSART(USARTx, SERIAL_BAUDRATE);
+	
 	gpio_set_mode(GPIOA, 0, GPIO_OUTPUT_PP);
+	gpio_set_mode(GPIOA, 1, GPIO_OUTPUT_PP);
+	gpio_set_mode(GPIOA, 12, GPIO_OUTPUT_PP);
 }
 
 static void setupFlash(void)
@@ -83,8 +83,8 @@ static void adcDefaultConfig(const adc_dev* dev)
 }
 static void setupADC(void)
 {
-	rcc_set_prescaler(RCC_PRESCALER_ADC, RCC_ADCPRE_PCLK_DIV_6);
-	adc_foreach(adcDefaultConfig);
+	/*rcc_set_prescaler(RCC_PRESCALER_ADC, RCC_ADCPRE_PCLK_DIV_6);*/
+	/*adc_foreach(adcDefaultConfig);*/
 }
 static void timerDefaultConfig(timer_dev *dev) {
 	timer_adv_reg_map *regs = (dev->regs).adv;
@@ -121,11 +121,12 @@ static void timerDefaultConfig(timer_dev *dev) {
 }
 static void setupTimers(void)
 {
-	timer_foreach(timerDefaultConfig);
+	/*timer_foreach(timerDefaultConfig);*/
 }
 
 static void setupUSART(usart_dev *dev, uint32 baud)
 {
+	uint32 i = USART_RX_BUF_SIZE;
 	/* FIXME: need some preprocess here, according to specific board */
 	if (dev == USART1) {	/* setup responding io */
 		gpio_set_mode(GPIOA, 9, GPIO_AF_OUTPUT_PP);
@@ -133,8 +134,12 @@ static void setupUSART(usart_dev *dev, uint32 baud)
 	}
     usart_init(dev);
     usart_set_baud_rate(dev, 72000000UL, baud);
+	usart_disable(dev);
 	usart_enable(dev);
-	usart_putc(dev, '\r');
+	/* flush buffer */
+	while (i--) {
+		usart_putc(dev, '\r');
+	}
 }
 
 static void _io_putc(void *p, char ch)

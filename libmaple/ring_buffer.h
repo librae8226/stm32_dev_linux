@@ -22,6 +22,12 @@
  * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
+ *
+ * Modification:
+ *     @date 2011.06
+ *     @author Librae
+ *     @brief
+ *         Add empty judgement in rb_remove.
  *****************************************************************************/
 
 /**
@@ -119,8 +125,12 @@ static inline void rb_insert(ring_buffer *rb, uint8 element) {
 /**
  * @brief Remove and return the first item from a ring buffer.
  * @param rb Buffer to remove from, must contain at least one element.
+ * Add check empty before read buffer.
  */
-static inline uint8 rb_remove(ring_buffer *rb) {
+static inline int8 rb_remove(ring_buffer *rb) {
+	if (rb_is_empty(rb)) {
+		return -1;
+	}
     uint8 ch = rb->buf[rb->head];
     rb->head = (rb->head == rb->size) ? 0 : rb->head + 1;
     return ch;

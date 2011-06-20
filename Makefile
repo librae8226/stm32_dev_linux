@@ -1,18 +1,18 @@
 .DEFAULT_GOAL := sketch
 
-# Valid BOARDs: maple, maple_native, ...
-BOARD ?= maple
-MEMORY_TARGET ?= jtag
+# Valid BOARDs: leach, maple, maple_native, ...
+BOARD = leach
+MEMORY_TARGET = jtag
 
 # USB ID for DFU upload
-VENDOR_ID  := 1EAF
-PRODUCT_ID := 0003
+VENDOR_ID  := LEAFGRASS
+PRODUCT_ID := LEACH001
 
 # Guess the MCU based on the BOARD (can be overridden )
 # FIXME the error LED config needs to be in wirish/ instead
-ifeq ($(BOARD), dq_128k_64p)
+ifeq ($(BOARD), leach)
    MCU := STM32F103RB
-   PRODUCT_ID := 0003
+   PRODUCT_ID := LEACH001
    ERROR_LED_PORT := GPIOA
    ERROR_LED_PIN  := 0
    DENSITY := STM32_MEDIUM_DENSITY

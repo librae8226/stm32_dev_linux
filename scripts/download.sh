@@ -12,6 +12,6 @@ else
 	echo ''
 	echo "download default image.."
 	echo ''
-	openocd -f ./support/openocd/stm32.cfg -c "init" -c "targets" -c "reset halt" -c "targets" -c "flash erase_address 0x08000000 0x20000" -c "flash write_bank 0 ./build/maple.bin 0" -c "verify_image ./build/maple.bin 0x08000000 bin" -c "reset run" -c "shutdown"
+	openocd -f ./support/openocd/stm32.cfg -c "init" -c "targets" -c "reset halt" -c "targets" -c "flash erase_address 0x08000000 0x20000" -c "flash write_bank 0 ./build/leach.bin 0" -c "verify_image ./build/leach.bin 0x08000000 bin" -c "reset run" -c "shutdown"
 fi
 

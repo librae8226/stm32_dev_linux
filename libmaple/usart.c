@@ -22,6 +22,12 @@
  * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
+ *
+ * Modification:
+ *     @date 2011.06
+ *     @author Librae
+ *     @brief
+ *         Add status variables into struct usart_dev.
  *****************************************************************************/
 
 /**
@@ -31,7 +37,10 @@
  * @brief USART control routines
  */
 
+#include "libmaple.h"
 #include "usart.h"
+#include "gpio.h"
+#include "../framework/tprintf/tprintf.h"
 
 /*
  * Devices
@@ -99,6 +108,8 @@ usart_dev *UART5 = &uart5;
  * @param dev         Serial port to be initialized
  */
 void usart_init(usart_dev *dev) {
+	dev->flag_trigger = 0;
+	dev->cnt_trigger = 0;
     rb_init(dev->rb, USART_RX_BUF_SIZE, dev->rx_buf);
     rcc_clk_enable(dev->clk_id);
     nvic_irq_enable(dev->irq_num);
@@ -227,11 +238,13 @@ static inline void usart_irq(usart_dev *dev) {
 #else
     /* By default, push bytes around in the ring buffer. */
     rb_push_insert(dev->rb, (uint8)dev->regs->DR);
+	dev->flag_trigger = 1;
+	dev->cnt_trigger++;
 #endif
 }
 
 void __irq_usart1(void) {
-    usart_irq(USART1);
+	usart_irq(USART1);
 }
 
 void __irq_usart2(void) {

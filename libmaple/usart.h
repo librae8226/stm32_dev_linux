@@ -22,6 +22,12 @@
  * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
+ *
+ * Modification:
+ *     @date 2011.06
+ *     @author Librae
+ *     @brief
+ *         Add status variables into struct usart_dev.
  *****************************************************************************/
 
 /**
@@ -229,7 +235,7 @@ typedef struct usart_reg_map {
  */
 
 #ifndef USART_RX_BUF_SIZE
-#define USART_RX_BUF_SIZE               64
+#define USART_RX_BUF_SIZE               32
 #endif
 
 /** USART device type */
@@ -240,6 +246,11 @@ typedef struct usart_dev {
     uint8 rx_buf[USART_RX_BUF_SIZE]; /**< Actual RX buffer used by rb */
     rcc_clk_id clk_id;               /**< RCC clock information */
     nvic_irq_num irq_num;            /**< USART NVIC interrupt */
+	/* counter of usart (re)trigger times */
+	uint8 cnt_trigger;
+	/* flag of whether usart is triggered, 
+	 * auto cleared while any call to usart_getc() */
+	uint8 flag_trigger;
 } usart_dev;
 
 extern usart_dev *USART1;
@@ -305,7 +316,8 @@ static inline void usart_putstr(usart_dev *dev, const char* str) {
  * @return byte read
  * @see usart_data_available()
  */
-static inline uint8 usart_getc(usart_dev *dev) {
+static inline int8 usart_getc(usart_dev *dev) {
+	dev->flag_trigger = 0;
     return rb_remove(dev->rb);
 }
 

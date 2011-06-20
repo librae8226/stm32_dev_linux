@@ -6,5 +6,5 @@ Thanks to their excellent works! - http://leaflabs.com
 
 Run command below in terminal:
 	$ make (or make jtag)
-	$ ./scripts/download.sh ./build/maple.bin
+	$ ./scripts/download.sh ./build/leach.bin
 
