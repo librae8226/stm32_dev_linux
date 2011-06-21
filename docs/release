@@ -2,6 +2,7 @@
 -----------------
 Brief:
 	New board name "leach".
+	Updated with libmaple.
 Bug fixes:
 New features:
 	ring_buffer.h: Add empty judgement in rb_remove.
@@ -9,6 +10,7 @@ New features:
 Todo list:
 	The include path of platform_config.h in libmaple source need to resolve.
 	Need comments and descriptions.
+	Architechture need constructed explicitly.
 
 20110619 - v0.0.1
 -----------------
