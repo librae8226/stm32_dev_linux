@@ -7,7 +7,7 @@ if [ -n "$1" ]; then
 	echo ''
 	if [ $1 == "push" ]; then
 		git add .
-		git commit
+		git commit -a
 		echo "pushing..."
 		git push origin master
 		git push --tags
