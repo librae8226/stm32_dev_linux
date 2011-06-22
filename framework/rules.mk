@@ -15,7 +15,7 @@ CFLAGS_$(d) := $(LIBMAPLE_INCLUDES) $(FRAMEWORK_INCLUDES)
 # Local rules and targets
 cSRCS_$(d) := boards/platform_config.c \
 			  system_init.c \
-			  libc_retarget.c \
+			  ulibc.c \
 			  tprintf/tprintf.c \
 			  misc.c
 

@@ -99,6 +99,7 @@ include $(SUPPORT_PATH)/make/build-templates.mk
 MODULES := $(SRCROOT)/libmaple
 MODULES += $(SRCROOT)/app/ss
 MODULES += $(SRCROOT)/framework
+MODULES += $(SRCROOT)/os/FreeRTOS
 
 # call each module rules.mk
 $(foreach m,$(MODULES),$(eval $(call MODULE_template,$(m))))

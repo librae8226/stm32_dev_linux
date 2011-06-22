@@ -32,6 +32,10 @@
 
 volatile uint32 systick_uptime_millis;
 
+/* FreeRTOS below */
+static void (*systick_user_callback)(void);
+/* FreeRTOS above */
+
 /**
  * @brief Initialize and enable SysTick.
  *
@@ -64,10 +68,22 @@ void systick_enable() {
                          SYSTICK_CSR_TICKINT_PEND);
 }
 
+/**
+ * Attach a callback called each ms.
+ */
+void systick_attach_callback(void (*callback)(void)) {
+    systick_user_callback = callback;
+}
+
 /*
  * SysTick ISR
  */
 
 void __exc_systick(void) {
+	/* FreeRTOS below */
+	if (systick_user_callback) {
+        systick_user_callback();
+    }
+	/* FreeRTOS above */
     systick_uptime_millis++;
 }

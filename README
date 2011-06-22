@@ -1,10 +1,20 @@
-STM32 base projects home. by librae - http://leafgrass.tk
-Now it works fine though it's ugly :P
+STM32 base projects home. Now it works fine though it's ugly :P
+by Librae - http://leafgrass.tk
 
 These projects is originally based on libmaple.
-Thanks to their excellent works! - http://leaflabs.com
+Thanks to their excellent works!
+- http://leaflabs.com
+
+Also many thanks to Real Time Engineers Ltd. for their nice FreeRTOS V7.0.1.
+- http://www.atollic.com
+And appreciation to Nis, for his porting of FreeRTOS on stm32 with libmaple.
+- https://github.com/nis
+
 
 Run command below in terminal:
-	$ make (or make jtag)
+	$ make jtag
 	$ ./scripts/download.sh ./build/leach.bin
+or just a default configuration:
+	$ make
+	$ ./scripts/download.sh
 
