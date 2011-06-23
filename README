@@ -5,8 +5,8 @@ These projects is originally based on libmaple.
 Thanks to their excellent works!
 - http://leaflabs.com
 
-Also many thanks to Real Time Engineers Ltd. for their nice FreeRTOS V7.0.1.
-- http://www.atollic.com
+Also many thanks to FreeRTOS.org for their nice FreeRTOS V7.0.1.
+- http://www.FreeRTOS.org
 And appreciation to Nis, for his porting of FreeRTOS on stm32 with libmaple.
 - https://github.com/nis
 
