@@ -13,7 +13,7 @@
 static void vLEDFlashTask( void *pvParameters )
 {
     for (;;) {
-        vTaskDelay(1900);
+        vTaskDelay(2900);
 		gpio_toggle_bit(GPIOA, 1);
         vTaskDelay(100);
 		gpio_toggle_bit(GPIOA, 1);
@@ -75,7 +75,7 @@ int main(void)
 	vTaskStartScheduler();
 
 	while (1) {
-		;
+		asm volatile("nop");
 	}
 
 	return 0;

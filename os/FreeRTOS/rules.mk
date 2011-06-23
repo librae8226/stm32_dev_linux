@@ -10,13 +10,13 @@ CXXFLAGS_$(d) := $(WIRISH_INCLUDES) $(LIBMAPLE_INCLUDES)
 CFLAGS_$(d) := $(WIRISH_INCLUDES) $(LIBMAPLE_INCLUDES)
 
 # Local rules and targets
-cSRCS_$(d) :=  utility/croutine.c        \
-               utility/heap_2.c          \
-               utility/list.c            \
-               utility/port.c            \
-               utility/queue.c           \
-               utility/timers.c          \
-               utility/tasks.c           \
+cSRCS_$(d) :=  utility/croutine.c \
+               utility/heap_2.c \
+               utility/list.c \
+               utility/port.c \
+               utility/queue.c \
+               utility/timers.c \
+               utility/tasks.c
 
 cppSRCS_$(d) := MapleFreeRTOS.cpp
 
