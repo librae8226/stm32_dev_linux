@@ -7,10 +7,10 @@ BUILDDIRS += $(BUILD_PATH)/$(d)/boards
 BUILDDIRS += $(BUILD_PATH)/$(d)/tprintf
 # BUILDDIRS += ... /* here goes on if more sub dirs */
 
-FRAMEWORK_INCLUDES := -I$(d) -I$(d)/boards -I$(d)/tprintf
+FRAMEWORK_INCLUDES := -I$(FRAMEWORK_PATH) -I$(FRAMEWORK_PATH)/boards -I$(FRAMEWORK_PATH)/tprintf
 
 # Local flags /* here need more INCLUDES if more sub dirs */
-CFLAGS_$(d) := $(LIBMAPLE_INCLUDES) $(FRAMEWORK_INCLUDES)
+CFLAGS_$(d) := -I$(d) $(LIBMAPLE_INCLUDES) $(FRAMEWORK_INCLUDES) -Wall
 
 # Local rules and targets
 cSRCS_$(d) := boards/platform_config.c \

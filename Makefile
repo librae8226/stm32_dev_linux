@@ -70,6 +70,7 @@ BUILD_PATH = build
 LIBMAPLE_PATH := $(SRCROOT)/libmaple
 SUPPORT_PATH := $(SRCROOT)/support
 APP_PATH := $(SRCROOT)/app
+FRAMEWORK_PATH := $(SRCROOT)/framework
 
 # Compilation flags.
 # FIXME remove the ERROR_LED config
