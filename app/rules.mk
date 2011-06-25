@@ -10,10 +10,11 @@ BUILDDIRS += $(BUILD_PATH)/$(d)/ss
 APP_INCLUDES := -I$(APP_PATH) -I$(APP_PATH)/ss
 
 # Local flags /* here need more INCLUDES if more sub dirs */
-CFLAGS_$(d) := -I$(d) $(LIBMAPLE_INCLUDES) $(FRAMEWORK_INCLUDES) $(APP_INCLUDES) -Wall
+CFLAGS_$(d) := -I$(d) $(LIBMAPLE_INCLUDES) $(FRAMEWORK_INCLUDES) $(APP_INCLUDES) $(OS_INCLUDES) -Wall
 
 # Local rules and targets /* add source files here */
-cSRCS_$(d) := ss/SerialShell.c
+cSRCS_$(d) := ss/SerialShell.c \
+              misc_task.c
 
 cFILES_$(d) := $(cSRCS_$(d):%=$(d)/%)
 

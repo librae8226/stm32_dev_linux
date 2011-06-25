@@ -41,8 +41,11 @@ void system_init(void)
 	setupUSART(USARTx, SERIAL_BAUDRATE);
 	
 	gpio_set_mode(GPIOA, 0, GPIO_OUTPUT_PP);
+	gpio_write_bit(GPIOA, 0, 0);
 	gpio_set_mode(GPIOA, 1, GPIO_OUTPUT_PP);
+	gpio_write_bit(GPIOA, 1, 0);
 	gpio_set_mode(GPIOA, 12, GPIO_OUTPUT_PP);
+	gpio_write_bit(GPIOA, 12, 0);
 }
 
 static void setupFlash(void)
