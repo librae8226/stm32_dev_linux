@@ -1,3 +1,15 @@
+20100625 - v0.0.4
+-----------------
+Brief:
+	Reconstruct source tree, especially FreeRTOS source.
+	Classify tasks, add InitTask.
+Bug fixes:
+	None.
+New features:
+	None.
+Known issues:
+	None.
+
 20100623 - v0.0.3
 -----------------
 Brief:
