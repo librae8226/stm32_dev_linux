@@ -1,15 +1,14 @@
-#include "platform_config.h"
-#include "../os/FreeRTOS/MapleFreeRTOS.h"
-/*#include "MapleFreeRTOS.h"*/
-#include "tprintf.h"
-
 #include "libmaple.h"
 #include "libmaple_types.h"
-
-#include "system_init.h"
-#include "ulibc.h"
 #include "gpio.h"
 #include "usart.h"
+
+#include "MapleFreeRTOS.h"
+
+#include "platform_config.h"
+#include "system_init.h"
+#include "tprintf.h"
+#include "ulibc.h"
 
 static void vLEDFlashTask( void *pvParameters )
 {

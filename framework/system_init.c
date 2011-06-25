@@ -1,10 +1,5 @@
-#include "platform_config.h"
-#include "system_init.h"
-#include "tprintf.h"
-
 #include "libmaple.h"
 #include "libmaple_types.h"
-
 #include "flash.h"
 #include "rcc.h"
 #include "nvic.h"
@@ -14,6 +9,10 @@
 #include "timer.h"
 #include "usb.h"
 #include "usart.h"
+
+#include "platform_config.h"
+#include "system_init.h"
+#include "tprintf.h"
 
 #include "misc.h"
 

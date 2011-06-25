@@ -69,7 +69,9 @@ void systick_enable() {
 }
 
 /**
- * Attach a callback called each ms.
+ * @brief Attach a callback to be called from the SysTick exception handler.
+ *
+ * To detach a callback, call this function again with a null argument.
  */
 void systick_attach_callback(void (*callback)(void)) {
     systick_user_callback = callback;
@@ -80,10 +82,10 @@ void systick_attach_callback(void (*callback)(void)) {
  */
 
 void __exc_systick(void) {
+    systick_uptime_millis++;
 	/* FreeRTOS below */
 	if (systick_user_callback) {
         systick_user_callback();
     }
 	/* FreeRTOS above */
-    systick_uptime_millis++;
 }
