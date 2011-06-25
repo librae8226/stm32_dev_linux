@@ -10,11 +10,16 @@ Also many thanks to FreeRTOS.org for their nice FreeRTOS V7.0.1.
 And appreciation to Nis, for his porting of FreeRTOS on stm32 with libmaple.
 - https://github.com/nis
 
-
 Run command below in terminal:
 	$ make jtag
 	$ ./scripts/download.sh ./build/leach.bin
 or just a default configuration:
 	$ make
 	$ ./scripts/download.sh
+
+
+NOTE!
+	If you would like to join our project, email to: g.leafgrass@gmail.com.
+During developing, you should see docs/notes for more information such as
+devoloping procedure, etc.
 
