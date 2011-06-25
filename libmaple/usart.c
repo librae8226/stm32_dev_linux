@@ -40,8 +40,6 @@
 #include "libmaple.h"
 #include "usart.h"
 #include "gpio.h"
-#include "../framework/tprintf/tprintf.h"
-/*#include "tprintf.h"*/
 
 /*
  * Devices

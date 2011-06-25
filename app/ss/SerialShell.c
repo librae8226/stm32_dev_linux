@@ -1,4 +1,5 @@
 #include "SerialShell.h"
+#include "tprintf.h"
 
 #include "usart.h"
 

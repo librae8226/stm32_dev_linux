@@ -71,26 +71,27 @@ LIBMAPLE_PATH := $(SRCROOT)/libmaple
 SUPPORT_PATH := $(SRCROOT)/support
 APP_PATH := $(SRCROOT)/app
 FRAMEWORK_PATH := $(SRCROOT)/framework
+OS_PATH := $(SRCROOT)/os
 
 # Compilation flags.
 # FIXME remove the ERROR_LED config
 GLOBAL_FLAGS    := -D$(VECT_BASE_ADDR) \
-		   -DBOARD_$(BOARD) -DMCU_$(MCU) \
-		   -DERROR_LED_PORT=$(ERROR_LED_PORT) \
-		   -DERROR_LED_PIN=$(ERROR_LED_PIN) \
-		   -D$(DENSITY) 
+                   -DBOARD_$(BOARD) -DMCU_$(MCU) \
+                   -DERROR_LED_PORT=$(ERROR_LED_PORT) \
+                   -DERROR_LED_PIN=$(ERROR_LED_PIN) \
+                   -D$(DENSITY) 
 GLOBAL_CFLAGS   := -Os -g3 -gdwarf-2  -mcpu=cortex-m3 -mthumb -march=armv7-m \
-		   -nostdlib -ffunction-sections -fdata-sections \
-		   -Wl,--gc-sections $(GLOBAL_FLAGS)
+                   -nostdlib -ffunction-sections -fdata-sections \
+                   -Wl,--gc-sections $(GLOBAL_FLAGS)
 
 #GLOBAL_CXXFLAGS := -fno-rtti -fno-exceptions -Wall $(GLOBAL_FLAGS)
 GLOBAL_ASFLAGS  := -mcpu=cortex-m3 -march=armv7-m -mthumb \
-		   -x assembler-with-cpp $(GLOBAL_FLAGS)
+                   -x assembler-with-cpp $(GLOBAL_FLAGS)
 
 LDDIR    := $(SUPPORT_PATH)/ld
 LDFLAGS  = -T$(LDDIR)/$(LDSCRIPT) -L$(LDDIR) \
-            -mcpu=cortex-m3 -mthumb -Xlinker \
-            --gc-sections --print-gc-sections --march=armv7-m -Wall
+           -mcpu=cortex-m3 -mthumb -Xlinker \
+           --gc-sections --print-gc-sections --march=armv7-m -Wall
 
 # Set up build rules and some useful templates
 include $(SUPPORT_PATH)/make/build-rules.mk
@@ -98,9 +99,9 @@ include $(SUPPORT_PATH)/make/build-templates.mk
 
 # Set all submodules here
 MODULES := $(SRCROOT)/libmaple
-MODULES += $(SRCROOT)/app/ss
-MODULES += $(SRCROOT)/framework
 MODULES += $(SRCROOT)/os/FreeRTOS
+MODULES += $(SRCROOT)/framework
+MODULES += $(SRCROOT)/app
 
 # call each module rules.mk
 $(foreach m,$(MODULES),$(eval $(call MODULE_template,$(m))))

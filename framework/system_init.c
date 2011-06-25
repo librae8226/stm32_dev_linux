@@ -1,5 +1,6 @@
 #include "platform_config.h"
 #include "system_init.h"
+#include "tprintf.h"
 
 #include "libmaple.h"
 #include "libmaple_types.h"
@@ -21,8 +22,8 @@
 static void setupFlash(void);
 static void setupClocks(void);
 static void setupNVIC(void);
-static void setupADC(void);
-static void setupTimers(void);
+/*static void setupADC(void);*/
+/*static void setupTimers(void);*/
 static void setupUSART(usart_dev *dev, uint32 baud);
 
 static void _io_putc(void *p, char ch);	/* for printf */
@@ -35,8 +36,8 @@ void system_init(void)
 	systick_init(SYSTICK_RELOAD_VAL);
 	gpio_init_all();
 	afio_init();
-	setupADC();
-	setupTimers();
+	/*setupADC();*/
+	/*setupTimers();*/
 	init_printf(NULL, _io_putc);
 	setupUSART(USARTx, SERIAL_BAUDRATE);
 	
@@ -71,7 +72,7 @@ static void setupNVIC(void)
 #error "You must select a base address for the vector table."
 #endif
 }
-
+/*
 static void adcDefaultConfig(const adc_dev* dev)
 {
 	adc_init(dev);
@@ -83,9 +84,11 @@ static void adcDefaultConfig(const adc_dev* dev)
 }
 static void setupADC(void)
 {
-	/*rcc_set_prescaler(RCC_PRESCALER_ADC, RCC_ADCPRE_PCLK_DIV_6);*/
-	/*adc_foreach(adcDefaultConfig);*/
+	rcc_set_prescaler(RCC_PRESCALER_ADC, RCC_ADCPRE_PCLK_DIV_6);
+	adc_foreach(adcDefaultConfig);
 }
+ */
+/*
 static void timerDefaultConfig(timer_dev *dev) {
 	timer_adv_reg_map *regs = (dev->regs).adv;
 	const uint16 full_overflow = 0xFFFF;
@@ -121,9 +124,9 @@ static void timerDefaultConfig(timer_dev *dev) {
 }
 static void setupTimers(void)
 {
-	/*timer_foreach(timerDefaultConfig);*/
+	timer_foreach(timerDefaultConfig);
 }
-
+*/
 static void setupUSART(usart_dev *dev, uint32 baud)
 {
 	uint32 i = USART_RX_BUF_SIZE;

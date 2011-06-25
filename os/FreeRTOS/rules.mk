@@ -5,8 +5,10 @@ d := $(dir)
 BUILDDIRS += $(BUILD_PATH)/$(d)
 BUILDDIRS += $(BUILD_PATH)/$(d)/utility
 
+OS_INCLUDES := -I$(OS_PATH) -I$(OS_PATH)/utility
+
 # Local flags
-CFLAGS_$(d) := $(LIBMAPLE_INCLUDES)
+CFLAGS_$(d) := -I$(d) $(LIBMAPLE_INCLUDES) $(OS_INCLUDES) -Wall
 
 # Local rules and targets
 cSRCS_$(d) :=  utility/croutine.c \

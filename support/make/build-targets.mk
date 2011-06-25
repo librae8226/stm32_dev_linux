@@ -1,7 +1,14 @@
 # main project target
-#$(BUILD_PATH)/main.o: main.cpp
+
+# Here adds includes' searching paths
+INCLUDES := $(LIBMAPLE_INCLUDES) \
+			$(FRAMEWORK_INCLUDES) \
+			$(OS_INCLUDES) \
+			$(APP_INCLUDES)
+
 $(BUILD_PATH)/main.o: $(APP_PATH)/main.c
-	$(SILENT_CC) $(CC) $(CFLAGS) $(LIBMAPLE_INCLUDES) $(FRAMEWORK_INCLUDES) -o $@ -c $<
+#	$(SILENT_CC) $(CC) $(CFLAGS) $(LIBMAPLE_INCLUDES) $(FRAMEWORK_INCLUDES) -o $@ -c $<
+	$(SILENT_CC) $(CC) $(CFLAGS) $(INCLUDES) -o $@ -c $<
 
 $(BUILD_PATH)/libmaple.a: $(BUILDDIRS) $(TGT_BIN)
 	- rm -f $@

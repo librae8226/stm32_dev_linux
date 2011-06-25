@@ -90,6 +90,11 @@ void systick_disable();
 void systick_enable();
 
 /**
+ * Attach a callback called each ms.
+ */
+void systick_attach_callback(void (*callback)(void));
+
+/**
  * @brief Returns the current value of the SysTick counter.
  */
 static inline uint32 systick_get_count(void) {
