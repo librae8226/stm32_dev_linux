@@ -3,21 +3,23 @@ sp := $(sp).x
 dirstack_$(sp) := $(d)
 d := $(dir)
 BUILDDIRS += $(BUILD_PATH)/$(d)
-BUILDDIRS += $(BUILD_PATH)/$(d)/utility
+BUILDDIRS += $(BUILD_PATH)/$(d)/source
+BUILDDIRS += $(BUILD_PATH)/$(d)/source/include
+BUILDDIRS += $(BUILD_PATH)/$(d)/source/portable
 
-OS_INCLUDES := -I$(OS_PATH) -I$(OS_PATH)/utility
+OS_INCLUDES := -I$(OS_PATH) -I$(OS_PATH)/source -I$(OS_PATH)/source/include -I$(OS_PATH)/source/portable
 
 # Local flags
 CFLAGS_$(d) := -I$(d) $(LIBMAPLE_INCLUDES) $(OS_INCLUDES) -Wall
 
 # Local rules and targets
-cSRCS_$(d) :=  utility/croutine.c \
-               utility/heap_2.c \
-               utility/list.c \
-               utility/port.c \
-               utility/queue.c \
-               utility/timers.c \
-               utility/tasks.c \
+cSRCS_$(d) :=  source/croutine.c \
+               source/heap_2.c \
+               source/list.c \
+               source/portable/port.c \
+               source/queue.c \
+               source/timers.c \
+               source/tasks.c \
 			   MapleFreeRTOS.c
 
 cFILES_$(d) := $(cSRCS_$(d):%=$(d)/%)

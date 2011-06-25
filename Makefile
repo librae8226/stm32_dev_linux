@@ -69,9 +69,9 @@ endif
 BUILD_PATH = build
 LIBMAPLE_PATH := $(SRCROOT)/libmaple
 SUPPORT_PATH := $(SRCROOT)/support
-APP_PATH := $(SRCROOT)/app
+OS_PATH := $(SRCROOT)/os/FreeRTOS
 FRAMEWORK_PATH := $(SRCROOT)/framework
-OS_PATH := $(SRCROOT)/os
+APP_PATH := $(SRCROOT)/app
 
 # Compilation flags.
 # FIXME remove the ERROR_LED config

@@ -59,6 +59,9 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
+/* Callback includes */
+#include "systick.h"
+
 /* For backward compatibility, ensure configKERNEL_INTERRUPT_PRIORITY is
 defined.  The value should also ensure backward compatibility.
 FreeRTOS.org versions prior to V4.4.0 did not include this definition. */
@@ -178,7 +181,7 @@ portBASE_TYPE xPortStartScheduler( void )
 	systick_attach_callback(&xPortSysTickHandler);
 //	/* Start the timer that generates the tick ISR.  Interrupts are disabled
 //	here already. */
-//	prvSetupTimerInterrupt();
+	prvSetupTimerInterrupt();	/* this call is no use, just avoid warnning */
 // !!! Maple
 
 	/* Initialise the critical nesting count ready for the first task. */
