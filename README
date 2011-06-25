@@ -13,7 +13,7 @@ And appreciation to Nis, for his porting of FreeRTOS on stm32 with libmaple.
 Run command below in terminal:
 	$ make jtag
 	$ ./scripts/download.sh ./build/leach.bin
-or just a default configuration:
+or just use the default configuration:
 	$ make
 	$ ./scripts/download.sh
 
