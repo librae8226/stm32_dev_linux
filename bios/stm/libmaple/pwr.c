@@ -1,7 +1,7 @@
 /******************************************************************************
  * The MIT License
  *
- * Copyright (c) 2010 Perry Hung.
+ * Copyright (c) 2011 LeafLabs, LLC.
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -24,28 +24,13 @@
  * SOFTWARE.
  *****************************************************************************/
 
+#include "pwr.h"
+#include "rcc.h"
+
 /**
- *  @file libmaple.h
- *  @brief General include file for libmaple
+ * Enables the power interface clock, and resets the power device.
  */
-
-#ifndef _LIBMAPLE_H_
-#define _LIBMAPLE_H_
-
-#include "libmaple_types.h"
-#include "stm32.h"
-#include "util.h"
-#include "delay.h"
-#include "../framework/boards/platform_config.h"
-
-/*
- * Where to put usercode, based on space reserved for bootloader.
- *
- * FIXME this has no business being here
- */
-#define USER_ADDR_ROM 0x08005000
-#define USER_ADDR_RAM 0x20000C00
-#define STACK_TOP     0x20000800
-
-#endif
-
+void pwr_init(void) {
+    rcc_clk_enable(RCC_PWR);
+    rcc_reset_dev(RCC_PWR);
+}

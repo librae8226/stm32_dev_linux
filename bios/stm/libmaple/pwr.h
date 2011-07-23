@@ -1,7 +1,7 @@
 /******************************************************************************
  * The MIT License
  *
- * Copyright (c) 2010 Perry Hung.
+ * Copyright (c) 2010 LeafLabs, LLC.
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -25,27 +25,61 @@
  *****************************************************************************/
 
 /**
- *  @file libmaple.h
- *  @brief General include file for libmaple
+ * @file pwr.h
+ * @brief Power control (PWR) defines.
  */
 
-#ifndef _LIBMAPLE_H_
-#define _LIBMAPLE_H_
+#include "libmaple.h"
 
-#include "libmaple_types.h"
-#include "stm32.h"
-#include "util.h"
-#include "delay.h"
-#include "../framework/boards/platform_config.h"
-
-/*
- * Where to put usercode, based on space reserved for bootloader.
- *
- * FIXME this has no business being here
- */
-#define USER_ADDR_ROM 0x08005000
-#define USER_ADDR_RAM 0x20000C00
-#define STACK_TOP     0x20000800
-
+#ifdef __cplusplus
+extern "C" {
 #endif
 
+/** Power interface register map. */
+typedef struct pwr_reg_map {
+    __io uint32 CR;      /**< Control register */
+    __io uint32 CSR;     /**< Control and status register */
+} pwr_reg_map;
+
+/** Power peripheral register map base pointer. */
+#define PWR_BASE                        ((struct pwr_reg_map*)0x40007000)
+
+/*
+ * Register bit definitions
+ */
+
+/* Control register */
+
+/** Disable backup domain write protection bit */
+#define PWR_CR_DBP  8
+/** Power voltage detector enable bit */
+#define PWR_CR_PVDE 4
+/** Clear standby flag bit */
+#define PWR_CR_CSBF 3
+/** Clear wakeup flag bit */
+#define PWR_CR_CWUF 2
+/** Power down deepsleep bit */
+#define PWR_CR_PDDS 1
+/** Low-power deepsleep bit */
+#define PWR_CR_LPDS 0
+
+/* Control and status register */
+
+/** Enable wakeup pin bit */
+#define PWR_CSR_EWUP 8
+/** PVD output bit */
+#define PWR_CSR_PVDO 2
+/** Standby flag bit */
+#define PWR_CSR_SBF  1
+/** Wakeup flag bit */
+#define PWR_CSR_WUF  0
+
+/*
+ * Convenience functions
+ */
+
+void pwr_init(void);
+
+#ifdef __cplusplus
+}
+#endif

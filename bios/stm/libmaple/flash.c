@@ -25,27 +25,35 @@
  *****************************************************************************/
 
 /**
- *  @file libmaple.h
- *  @brief General include file for libmaple
+ * @brief flash peripheral management functions
  */
 
-#ifndef _LIBMAPLE_H_
-#define _LIBMAPLE_H_
+#include "libmaple.h"
+#include "flash.h"
+#include "bitband.h"
 
-#include "libmaple_types.h"
-#include "stm32.h"
-#include "util.h"
-#include "delay.h"
-#include "../framework/boards/platform_config.h"
+/**
+ * @brief Turn on the hardware prefetcher.
+ */
+void flash_enable_prefetch(void) {
+    *bb_perip(&FLASH_BASE->ACR, FLASH_ACR_PRFTBE_BIT) = 1;
+}
 
-/*
- * Where to put usercode, based on space reserved for bootloader.
+/**
+ * @brief Set flash wait states
  *
- * FIXME this has no business being here
+ * See ST PM0042, section 3.1 for restrictions on the acceptable value
+ * of wait_states for a given SYSCLK configuration.
+ *
+ * @param wait_states number of wait states (one of
+ *                    FLASH_WAIT_STATE_0, FLASH_WAIT_STATE_1,
+ *                    FLASH_WAIT_STATE_2).
  */
-#define USER_ADDR_ROM 0x08005000
-#define USER_ADDR_RAM 0x20000C00
-#define STACK_TOP     0x20000800
+void flash_set_latency(uint32 wait_states) {
+    uint32 val = FLASH_BASE->ACR;
 
-#endif
+    val &= ~FLASH_ACR_LATENCY;
+    val |= wait_states;
 
+    FLASH_BASE->ACR = val;
+}

@@ -1,7 +1,7 @@
 /******************************************************************************
  * The MIT License
  *
- * Copyright (c) 2010 Perry Hung.
+ * Copyright (c) 2010 Michael Hope.
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -25,27 +25,38 @@
  *****************************************************************************/
 
 /**
- *  @file libmaple.h
- *  @brief General include file for libmaple
+ * @file iwdg.c
+ * @brief Independent watchdog (IWDG) support
  */
 
-#ifndef _LIBMAPLE_H_
-#define _LIBMAPLE_H_
+#include "iwdg.h"
 
-#include "libmaple_types.h"
-#include "stm32.h"
-#include "util.h"
-#include "delay.h"
-#include "../framework/boards/platform_config.h"
-
-/*
- * Where to put usercode, based on space reserved for bootloader.
+/**
+ * @brief Initialise and start the watchdog
  *
- * FIXME this has no business being here
+ * The prescaler and reload set the timeout.  For example, a prescaler
+ * of IWDG_PRE_32 divides the 40 kHz clock by 32 and gives roughly 1
+ * ms per reload.
+ *
+ * @param prescaler Prescaler for the 40 kHz IWDG clock.
+ * @param reload Independent watchdog counter reload value.
  */
-#define USER_ADDR_ROM 0x08005000
-#define USER_ADDR_RAM 0x20000C00
-#define STACK_TOP     0x20000800
+void iwdg_init(iwdg_prescaler prescaler, uint16 reload) {
+   IWDG_BASE->KR = IWDG_KR_UNLOCK;
+   IWDG_BASE->PR = prescaler;
+   IWDG_BASE->RLR = reload;
 
-#endif
+   /* Start things off */
+   IWDG_BASE->KR = IWDG_KR_START;
+   iwdg_feed();
+}
 
+/**
+ * @brief Reset the IWDG counter.
+ *
+ * Calling this function will cause the IWDG counter to be reset to
+ * its reload value.
+ */
+void iwdg_feed(void) {
+    IWDG_BASE->KR = IWDG_KR_FEED;
+}
